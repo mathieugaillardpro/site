@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.mathieugaillardpro.fr/sitemap.xml
+
+# Images accessibles aux moteurs
+User-agent: Googlebot-Image
+Allow: /img/
