@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap'); /* // MODIF */
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap'); /* // MODIF */
 
 :root {
   --bg: #0A0A0A;
@@ -2336,3 +2336,9 @@ video[poster] {
   width: 100%;
   height: 100%;
 }
+ 
+ / *   C o n t a c t   S V G   I c o n s   * / 
+ 
+ . c o n t a c t - i c o n   . c o n t a c t - s v g   {   w i d t h :   2 0 p x ;   h e i g h t :   2 0 p x ;   } 
+ 
+ 

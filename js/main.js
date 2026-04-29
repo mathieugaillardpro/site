@@ -98,63 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   });
 
-/* =====================================================
-     // MODIF: formulaire devis en bas + liens CTA sans redirection
-     Exclusion : contact.html et mentions-legales.html
-  ===================================================== */
-  if (!window.location.pathname.endsWith('contact.html') && 
-      !window.location.pathname.endsWith('mentions-legales.html') &&
-      !document.getElementById('contact-form')) {
-      
-    var footerEl = document.querySelector('.footer');
-    if (footerEl) {
-      var inlineSection = document.createElement('section');
-      inlineSection.className = 'section';
-      inlineSection.id = 'contact-inline';
-      inlineSection.innerHTML =
-        '<div class="container">' +
-          '<h2 class="section-title" style="margin-bottom:20px;">Demande de devis</h2>' +
-          '<form id="contact-form" name="contact" method="POST" netlify netlify-honeypot="bot-field">' +
-            '<input type="hidden" name="form-name" value="contact">' +
-            '<p style="display:none;"><label>Ne pas remplir : <input name="bot-field"></label></p>' +
-            '<div class="contact-grid">' +
-              '<div>' +
-                '<div class="form-group"><label for="name">Nom et prénom</label><input type="text" id="name" name="name" required placeholder="Votre nom"></div>' +
-                '<div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required placeholder="votre@email.com"></div>' +
-                '<div class="form-group"><label for="phone">Téléphone</label><input type="tel" id="phone" name="phone" placeholder="06 XX XX XX XX"></div>' +
-              '</div>' +
-              '<div>' +
-                '<div class="form-group"><label for="service">Type de projet</label><select id="service" name="service"><option value="">Sélectionnez...</option><option value="immobilier">Immobilier</option><option value="corporate">Corporate</option><option value="evenementiel">Événementiel</option><option value="mariage">Mariage</option><option value="shooting">Shooting</option><option value="reseaux">Réseaux sociaux</option><option value="voyage">Voyage</option><option value="autre">Autre projet</option></select></div>' +
-                '<div class="form-group"><label for="message">Votre message</label><textarea id="message" name="message" required placeholder="Décrivez votre projet"></textarea></div>' +
-                '<button type="submit" class="btn btn-primary" style="width:100%;">Envoyer le message</button>' +
-              '</div>' +
-            '</div>' +
-          '</form>' +
-        '</div>';
-      footerEl.parentNode.insertBefore(inlineSection, footerEl);
-    }
-  }
-  // // MODIF: vidéo de fond du bloc demande de devis
-  var inlineContact = document.getElementById('contact-inline');
-  if (inlineContact && !inlineContact.querySelector('.contact-bg-video')) {
-    var videoSrc = window.location.pathname.indexOf('/blog/') !== -1 ? '../video/devis-bg.mp4' : 'video/devis-bg.mp4';
-    var bgVideo = document.createElement('video');
-    bgVideo.className = 'contact-bg-video';
-    bgVideo.autoplay = true;
-    bgVideo.muted = true;
-    bgVideo.loop = true;
-    bgVideo.playsInline = true;
-    bgVideo.preload = 'auto';
-    bgVideo.setAttribute('aria-hidden', 'true');
-    bgVideo.innerHTML = '<source src="' + videoSrc + '" type="video/mp4">';
-    inlineContact.insertBefore(bgVideo, inlineContact.firstChild);
-  }
-  document.querySelectorAll('.cta-section a[href="contact.html"], .btn[href="contact.html"]').forEach(function (link) {
-    if (!link.closest('.nav')) { // // MODIF: ne pas toucher la navigation
-      link.setAttribute('href', '#contact-inline');
-    }
-  });
-
+    
   /* =====================================================
      PORTFOLIO — clic ouvre YouTube
   ===================================================== */
@@ -436,34 +380,6 @@ var cMx = -100, cMy = -100;
   document.querySelectorAll('.section-line').forEach(function (line) {
     lineObs.observe(line);
   });
-
-  /* =====================================================
-     FORMULAIRE CONTACT — Netlify Forms
-  ===================================================== */
-  var form = document.getElementById('contact-form');
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var btn = form.querySelector('[type="submit"]');
-      btn.disabled = true;
-      btn.textContent = 'Envoi en cours…';
-
-      var formData = new FormData(form);
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData).toString()
-      })
-      .then(function () {
-        form.innerHTML = '<div style="text-align:center;padding:40px 0;"><p style="font-size:20px;margin-bottom:12px;">✓ Message envoyé !</p><p style="color:rgba(255,255,255,0.5);font-size:14px;">Merci, je vous réponds sous 24h.</p></div>';
-      })
-      .catch(function () {
-        btn.disabled = false;
-        btn.textContent = 'Envoyer le message';
-        alert('Une erreur est survenue. Merci de réessayer ou de me contacter directement par email.');
-      });
-    });
-  }
 
   /* =====================================================
      // MODIF: lightbox photos avec navigation par projet
