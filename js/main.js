@@ -69,12 +69,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  document.querySelectorAll('a[href]').forEach(function (a) {
+document.querySelectorAll('a[href]').forEach(function (a) {
     var href = a.getAttribute('href');
     if (!href) return;
+    
+    // Ne pas intercepter : les ancres, les emails, les tel, les target blank, et les liens externes
     if (href.indexOf('#') === 0 || href.indexOf('mailto:') === 0 ||
         href.indexOf('tel:') === 0 || a.target === '_blank' ||
-        (href.indexOf('http') === 0 && href.indexOf(location.hostname) === -1)) return;
+        (a.hostname !== window.location.hostname && a.hostname !== '')) return;
 
         a.addEventListener('click', function (e) {
           if (e.metaKey || e.ctrlKey || e.shiftKey) return;
@@ -85,11 +87,9 @@ document.addEventListener('DOMContentLoaded', function () {
           document.body.classList.add('cursor-hide');
           setTimeout(function () { 
             location.href = dest; 
-            // FIX BFCache : On force la réapparition de la page au cas où l'utilisateur fait "Retour"
             setTimeout(function() { document.body.classList.add('page-visible'); }, 500);
           }, 280);
         });
-    
       });
     
       /* FIX BFCache iOS/Safari : Force l'affichage systématiquement */
