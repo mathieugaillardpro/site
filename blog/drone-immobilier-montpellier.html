@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drone et immobilier à Montpellier : vues aériennes pour vos biens | Mathieu Gaillard Pro</title>
   <meta name="description" content="Pourquoi les prises de vue drone sont devenues indispensables pour vendre un bien immobilier à Montpellier. Réglementation DJI, prix et exemples.">
@@ -111,9 +112,9 @@
   <script src="../js/main.js"></script>
   <script>
   var inlineContact = document.getElementById('contact-inline');
-  if (inlineContact && !inlineContact.querySelector('.contact-bg-video')) {
+  if (inlineContact && !inlineContact.querySelector('.video-background, .contact-bg-video')) {
     var bgVideo = document.createElement('video');
-    bgVideo.className = 'contact-bg-video';
+    bgVideo.className = 'video-background';
     bgVideo.autoplay = true;
     bgVideo.muted = true;
     bgVideo.loop = true;

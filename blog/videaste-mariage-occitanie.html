@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vidéaste de mariage en Occitanie : comment choisir ? | Mathieu Gaillard Pro</title>
   <meta name="description" content="Style, matériel, budget, feeling : comment choisir son vidéaste de mariage en Occitanie. Guide complet par Mathieu Gaillard, vidéaste mariage Montpellier.">
@@ -122,9 +123,9 @@
   <script src="../js/main.js"></script>
   <script>
   var inlineContact = document.getElementById('contact-inline');
-  if (inlineContact && !inlineContact.querySelector('.contact-bg-video')) {
+  if (inlineContact && !inlineContact.querySelector('.video-background, .contact-bg-video')) {
     var bgVideo = document.createElement('video');
-    bgVideo.className = 'contact-bg-video';
+    bgVideo.className = 'video-background';
     bgVideo.autoplay = true;
     bgVideo.muted = true;
     bgVideo.loop = true;

@@ -612,3 +612,27 @@ var cMx = -100, cMy = -100;
   });
     draw();
   });
+
+  var contactFormEl = document.getElementById('contact-form');
+  if (contactFormEl && contactFormEl.getAttribute('action') && contactFormEl.getAttribute('action').indexOf('formspree.io') !== -1) {
+    var formSuccessEl = document.getElementById('form-success');
+    contactFormEl.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      var fd = new FormData(contactFormEl);
+      fetch(contactFormEl.getAttribute('action'), {
+        method: 'POST',
+        body: fd,
+        headers: { Accept: 'application/json' }
+      }).then(function (res) {
+        if (res.ok) {
+          contactFormEl.style.display = 'none';
+          if (formSuccessEl) formSuccessEl.style.display = 'block';
+          contactFormEl.reset();
+        } else {
+          alert("Une erreur est survenue lors de l'envoi du message.");
+        }
+      }).catch(function () {
+        alert("Une erreur est survenue lors de l'envoi du message.");
+      });
+    });
+  }

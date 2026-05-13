@@ -2,7 +2,8 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Photographe Portrait Montpellier | Séance Photo | Mathieu Gaillard Pro</title>
   <meta name="description" content="Séances photo portrait, couple, famille et book à Montpellier. Photos naturelles et élégantes.">
   <meta property="og:title" content="Photographe Portrait Montpellier | Séance Photo | Mathieu Gaillard Pro">
@@ -179,26 +180,48 @@
       </div>
     </div>
   </section>
-  <!-- // MODIF: formulaire devis directement en bas de page -->
+
   <section class="section" id="contact-inline">
+    <video autoplay loop muted playsinline class="video-background" preload="auto" aria-hidden="true">
+      <source src="video/devis-bg.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas les vidéos HTML5.
+    </video>
     <div class="container">
       <h2 class="section-title" style="margin-bottom:20px;">Demande de devis</h2>
-      <form id="contact-form" name="contact" method="POST" netlify netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="contact">
-        <p style="display:none;"><label>Ne pas remplir : <input name="bot-field"></label></p>
+      <form id="contact-form" action="https://formspree.io/f/mdayqrwl" method="POST">
+        <input type="hidden" name="_subject" value="Devis — Shooting (site)">
+        <input type="hidden" name="page_source" value="shooting">
         <div class="contact-grid">
           <div>
-            <div class="form-group"><label for="name">Nom et prénom</label><input type="text" id="name" name="name" required placeholder="Votre nom"></div>
+            <div class="form-group"><label for="nom">Nom et prénom</label><input type="text" id="nom" name="nom" required placeholder="Votre nom"></div>
             <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required placeholder="votre@email.com"></div>
-            <div class="form-group"><label for="phone">Téléphone</label><input type="tel" id="phone" name="phone" placeholder="06 XX XX XX XX"></div>
+            <div class="form-group"><label for="telephone">Téléphone</label><input type="tel" id="telephone" name="telephone" placeholder="06 XX XX XX XX"></div>
           </div>
           <div>
-            <div class="form-group"><label for="service">Type de projet</label><select id="service" name="service"><option value="">Sélectionnez...</option><option value="portrait">Shooting</option><option value="reels">Réseaux sociaux</option><option value="mariage">Mariage</option><option value="corporate">Corporate</option><option value="autre">Autre projet</option></select></div>
+            <div class="form-group"><label for="sujet">Sujet</label><input type="text" id="sujet" name="sujet" placeholder="Objet de votre message"></div>
+            <div class="form-group"><label for="service">Type de projet</label>
+              <select id="service" name="service" required>
+                <option value="" disabled>Type de projet</option>
+                <option value="immobilier">Immobilier</option>
+                <option value="corporate">Corporate</option>
+                <option value="evenementiel">Événementiel</option>
+                <option value="mariage">Mariage</option>
+                <option value="shooting" selected>Shooting</option>
+                <option value="reseaux">Réseaux sociaux</option>
+                <option value="voyage">Voyage</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
             <div class="form-group"><label for="message">Votre message</label><textarea id="message" name="message" required placeholder="Décrivez votre projet"></textarea></div>
             <button type="submit" class="btn btn-primary" style="width:100%;">Envoyer le message</button>
           </div>
         </div>
       </form>
+      <div id="form-success" style="display:none;text-align:center;padding:40px;">
+        <p style="font-size:1.1rem;font-weight:600;margin-bottom:8px;">Message envoyé !</p>
+        <p style="color:var(--text3);margin-bottom:24px;">Je vous réponds sous 24h.</p>
+        <a href="/" class="btn btn-outline">Retour à l'accueil</a>
+      </div>
     </div>
   </section>
 

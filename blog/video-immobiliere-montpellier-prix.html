@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prix d'une vidéo immobilière à Montpellier (2026) | Mathieu Gaillard Pro</title>
   <meta name="description" content="Quel est le prix d'une vidéo immobilière à Montpellier ? Tarifs, facteurs de coût, options (drone, photo HDR, IA) et conseils pour choisir le bon format.">
@@ -124,9 +125,9 @@
   <script src="../js/main.js"></script>
   <script>
   var inlineContact = document.getElementById('contact-inline');
-  if (inlineContact && !inlineContact.querySelector('.contact-bg-video')) {
+  if (inlineContact && !inlineContact.querySelector('.video-background, .contact-bg-video')) {
     var bgVideo = document.createElement('video');
-    bgVideo.className = 'contact-bg-video';
+    bgVideo.className = 'video-background';
     bgVideo.autoplay = true;
     bgVideo.muted = true;
     bgVideo.loop = true;
