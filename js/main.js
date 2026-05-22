@@ -1,6 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
 
   /* =====================================================
+     SCROLL VERS ANCRE PUIS NETTOIE L'URL
+  ===================================================== */
+  if (window.location.hash) {
+    const id = window.location.hash.substring(1);
+    const target = document.getElementById(id);
+    if (target) {
+      setTimeout(() => {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', window.location.pathname);
+      }, 300);
+    }
+  }
+
+  /* =====================================================
      NAV — hamburger + scroll shadow
   ===================================================== */
   var nav = document.querySelector('.nav');

@@ -421,7 +421,7 @@ img { max-width: 100%; display: block; }
 .portfolio-overlay { /* // MODIF */
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 100%);
+ background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0) 100%);
   transition: opacity 0.25s ease;
 }
 .portfolio-thumb {
@@ -455,10 +455,7 @@ img { max-width: 100%; display: block; }
 .portfolio-item .portfolio-label,
 .portfolio-item .portfolio-name,
 .portfolio-item .portfolio-info p {
-  text-shadow: 
-    0 2px 4px rgba(0,0,0,0.9),
-    0 4px 16px rgba(0,0,0,0.8),
-    0 8px 32px rgba(0,0,0,0.6) !important;
+ text-shadow: 0 0 8px rgba(0,0,0,1), 0 2px 12px rgba(0,0,0,1), 0 4px 24px rgba(0,0,0,1);
   color: #ffffff !important;
 }
 
@@ -473,10 +470,13 @@ img { max-width: 100%; display: block; }
   display: block; /* // MODIF */
 }
 .portfolio-name {
-  font-size: 12px; font-weight: 500; font-style: normal; color: #ffffff !important; /* // MODIF */
-  text-transform: uppercase; /* // MODIF */
-  letter-spacing: 0.9px; /* // MODIF */
-  text-shadow: 0 2px 12px rgba(0,0,0,0.7);
+  font-size: 12px; font-weight: 500; font-style: normal; color: #ffffff !important;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  text-shadow: 
+    0 0 8px rgba(0,0,0,1),
+    0 2px 12px rgba(0,0,0,1),
+    0 4px 24px rgba(0,0,0,1) !important;
 }
 .portfolio-play {
   display: none; /* // MODIF */
