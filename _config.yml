@@ -1,0 +1,7 @@
+# GitHub Pages : fichiers d'outils Claude Code à ne pas publier sur le site
+exclude:
+  - CLAUDE.md
+  - AGENTS.md
+  - INSTALLED_TOOLS.md
+  - skills-lock.json
+  - graphify-out

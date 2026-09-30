@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "gsc": {
+      "command": "uvx",
+      "args": [
+        "mcp-search-console==0.4.1"
+      ],
+      "env": {
+        "GSC_OAUTH_CLIENT_SECRETS_FILE": "C:/Users/matga/.config/mcp-gsc/client_secrets.json",
+        "GSC_ALLOW_DESTRUCTIVE": "false",
+        "GSC_DATA_STATE": "all"
+      }
+    },
+    "geo-optimizer": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "geo-optimizer-skill[mcp]==4.18.3",
+        "--with",
+        "mcp<2",
+        "geo-mcp"
+      ]
+    }
+  }
+}

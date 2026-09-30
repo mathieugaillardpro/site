@@ -1,0 +1,11 @@
+graphify-out/
+.claude/settings.local.json
+.claude/*.graphify-bak
+.env
+.env.*
+client_secrets*.json
+token.json
+
+# Documents perso : jamais publiés
+img/*.pdf
+*.pdf

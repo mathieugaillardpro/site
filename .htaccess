@@ -2,3 +2,7 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Outils Claude Code : ne jamais servir ces fichiers en ligne
+RedirectMatch 404 ^/(\.claude|\.agents|\.git|graphify-out)(/.*)?$
+RedirectMatch 404 ^/(CLAUDE\.md|AGENTS\.md|INSTALLED_TOOLS\.md|skills-lock\.json|\.mcp\.json|\.env.*)$
