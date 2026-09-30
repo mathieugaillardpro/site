@@ -449,9 +449,9 @@ var cMx = -100, cMy = -100;
     }
 
     projectBlocks.forEach(function (block) {
-      var imgs = Array.from(block.querySelectorAll('img'));
+      var imgs = Array.from(block.querySelectorAll('img:not(.yt-thumb)'));
       if (!imgs.length) return;
-      var list = imgs.map(function (img) { return { src: img.src, alt: img.alt }; });
+      var list = imgs.map(function (img) { return { src: img.getAttribute('data-full') || img.src, alt: img.alt }; });
       imgs.forEach(function (img, index) {
         img.style.cursor = 'zoom-in';
         img.addEventListener('click', function () {
@@ -520,6 +520,8 @@ var cMx = -100, cMy = -100;
     var canvas = document.createElement('canvas');
     canvas.className = 'hero-canvas';
     hero.insertBefore(canvas, hero.firstChild);
+    /* Canvas masqué en CSS : on ne lance pas l'animation (économie de CPU) */
+    if (window.getComputedStyle(canvas).display === 'none') { canvas.remove(); return; }
     var ctx = canvas.getContext('2d');
     var w, h, particles = [], t = 0;
     var mouseX = 0, mouseY = 0, targetMX = 0, targetMY = 0;
@@ -639,9 +641,8 @@ var cMx = -100, cMy = -100;
         headers: { Accept: 'application/json' }
       }).then(function (res) {
         if (res.ok) {
-          contactFormEl.style.display = 'none';
-          if (formSuccessEl) formSuccessEl.style.display = 'block';
           contactFormEl.reset();
+          window.location.href = '/merci';
         } else {
           alert("Une erreur est survenue lors de l'envoi du message.");
         }
@@ -650,3 +651,119 @@ var cMx = -100, cMy = -100;
       });
     });
   }
+
+
+/* =====================================================
+   Lecteurs YouTube chargés au clic (performance + vie privée)
+===================================================== */
+(function () {
+  document.querySelectorAll('.yt-facade').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var id = btn.getAttribute('data-id');
+      var iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&modestbranding=1&playsinline=1';
+      iframe.title = btn.getAttribute('data-title') || 'Vidéo YouTube';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      iframe.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:0;';
+      btn.replaceWith(iframe);
+    });
+  });
+  document.querySelectorAll('.yt-thumb').forEach(function (img) {
+    img.addEventListener('error', function () {
+      var fb = img.getAttribute('data-fallback');
+      if (fb && img.src.indexOf(fb) === -1) img.src = fb;
+    });
+  });
+})();
+
+/* Vidéos de fond du formulaire : chargées à l'approche */
+(function () {
+  var vids = document.querySelectorAll('video[data-lazy-src]');
+  if (!vids.length) return;
+  function load(v) {
+    if (v.getAttribute('src')) return;
+    v.src = v.getAttribute('data-lazy-src');
+    v.load();
+    var pr = v.play(); if (pr && pr.catch) pr.catch(function () {});
+  }
+  if (!('IntersectionObserver' in window)) { vids.forEach(load); return; }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) { load(e.target); io.unobserve(e.target); } });
+  }, { rootMargin: '400px' });
+  vids.forEach(function (v) { io.observe(v); });
+})();
+
+/* =====================================================
+   Galeries justifiées : lignes pleines, hauteurs égales, sans recadrage
+   Chaque ligne est un conteneur à part : aucune image ne peut passer à la ligne
+   suivante ni être étirée, quelle que soit la taille de l'écran ou le zoom.
+===================================================== */
+(function () {
+  var galleries = document.querySelectorAll('.gallery');
+  if (!galleries.length) return;
+
+  /* Découpe optimale en lignes : chaque ligne vise la hauteur cible h */
+  function breakRows(ratios, W, h, gap, allowShort) {
+    var n = ratios.length, cost = [0], prev = [0], i, j;
+    for (i = 1; i <= n; i++) {
+      cost[i] = Infinity; prev[i] = 0;
+      var sum = 0;
+      for (j = i - 1; j >= 0; j--) {
+        sum += ratios[j];
+        var cnt = i - j;
+        var rh = (W - gap * (cnt - 1)) / sum;
+        if (rh < h * 0.5) break;                 // ligne trop chargée
+        var bad = Math.pow((rh - h) / h, 2);
+        if (allowShort && i === n && rh > h) bad = 0; // dernière ligne : peut rester courte s'il n'y a pas de bandeau
+        var c = cost[j] + bad;
+        if (c < cost[i]) { cost[i] = c; prev[i] = j; }
+      }
+      if (cost[i] === Infinity) { cost[i] = cost[i - 1] + 1; prev[i] = i - 1; }
+    }
+    var sizes = [], k = n;
+    while (k > 0) { sizes.unshift(k - prev[k]); k = prev[k]; }
+    return sizes;
+  }
+
+  function layout(g) {
+    // remettre les photos à plat
+    g.querySelectorAll('.g-row').forEach(function (row) {
+      while (row.firstChild) g.insertBefore(row.firstChild, row);
+      row.remove();
+    });
+    var feature = g.querySelector('.g-item--feature');
+    var items = Array.prototype.slice.call(g.querySelectorAll(':scope > .g-item:not(.g-item--feature)'));
+    if (!items.length) return;
+    var cs = getComputedStyle(g);
+    var W = g.clientWidth;
+    var gap = parseFloat(cs.columnGap) || 6;
+    var h = parseFloat(cs.getPropertyValue('--h')) || 205;
+    var ratios = items.map(function (it) { return parseFloat(it.style.getPropertyValue('--r')) || 1.5; });
+    var sizes = breakRows(ratios, W, h, gap, !feature);
+    var idx = 0;
+    sizes.forEach(function (size) {
+      var row = document.createElement('div');
+      row.className = 'g-row';
+      var sum = 0;
+      for (var i = 0; i < size; i++) sum += ratios[idx + i];
+      var rowH = (W - gap * (size - 1)) / sum;
+      if (rowH > h * (feature ? 1.7 : 1.35)) {          // ligne peu remplie : hauteur normale, alignée à gauche
+        row.style.maxWidth = Math.round(sum * h + gap * (size - 1)) + 'px';
+      }
+      for (i = 0; i < size; i++) row.appendChild(items[idx + i]);
+      idx += size;
+      if (feature) g.insertBefore(row, feature); else g.appendChild(row);
+    });
+    g.classList.add('is-rows');
+  }
+
+  function all() { galleries.forEach(layout); }
+  all();
+  var tmr, lastW = window.innerWidth;
+  window.addEventListener('resize', function () {
+    if (window.innerWidth === lastW) return;
+    lastW = window.innerWidth;
+    clearTimeout(tmr); tmr = setTimeout(all, 150);
+  });
+})();

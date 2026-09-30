@@ -5,3 +5,8 @@ exclude:
   - INSTALLED_TOOLS.md
   - skills-lock.json
   - graphify-out
+  - "Claude outputs"
+  - _originaux_img
+  - _enc
+  - _tmp
+  - .htaccess

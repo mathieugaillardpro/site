@@ -10,16 +10,24 @@
   <meta property="og:description" content="Photographe portrait à Montpellier : shooting mode, famille, enfant et nouveau-né en lumière naturelle. Séances en extérieur ou en studio à partir de 150 €.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mathieugaillardpro.fr/shooting">
-  <meta property="og:image" content="https://mathieugaillardpro.fr/img/og-default.jpg">
+  <meta property="og:image" content="https://mathieugaillardpro.fr/img/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mathieu Gaillard, vidéaste et photographe à Montpellier">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mathieugaillardpro.fr/img/og-image.jpg">
   <link rel="canonical" href="https://mathieugaillardpro.fr/shooting">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<link rel="preload" as="image" href="img/posters/hero-shooting.jpg" fetchpriority="high">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://i.ytimg.com; media-src 'self'; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; frame-src https://www.youtube-nocookie.com https://www.youtube.com; connect-src 'self' https://formspree.io; form-action https://formspree.io; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+  <link rel="preload" href="/fonts/montserrat-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/montserrat-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=20260930g">
 </head>
 <body class="shooting-page">
   <nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo">
@@ -39,118 +47,178 @@
       <a href="contact" class="nav-cta">Contact</a><button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button></div><div class="nav-mobile"><a href="corporate">Corporate</a><a href="evenementiel">Événementiel</a><a href="immobilier">Immobilier</a><a href="mariage">Mariage</a><a href="reseaux-sociaux">Réseaux Sociaux</a><a href="shooting">Shooting</a>
       <a href="voyage">Voyage</a><a href="contact">Contact</a></div></nav> <!-- // MODIF -->
 
-  <section class="page-hero page-hero-cat">
-    <div class="hero-video" style="background-image:url('img/hero-shooting.jpg');">
-      <video autoplay muted loop playsinline preload="metadata" poster="img/hero-shooting.jpg">
-        <source src="video/website-shooting.mp4" type="video/mp4">
+  <section class="page-hero page-hero-cat page-hero-video">
+    <div class="hero-video" style="background-image:url('img/posters/hero-shooting.jpg');">
+      <video autoplay muted loop playsinline preload="metadata" poster="img/posters/hero-shooting.jpg">
+        <source src="video/website-shooting-1080.mp4" type="video/mp4" media="(min-width: 900px)">
+        <source src="video/website-shooting-720.mp4" type="video/mp4">
       </video>
     </div>
-    <div class="hero-gradient" aria-hidden="true"></div>
-    <div class="container">
-      <p class="hero-kicker">Shooting</p>
-      <h1>Photographe portrait et lifestyle à Montpellier</h1>
-      <p class="hero-lead">Portrait, mode, famille et nouveau-né, en lumière naturelle ou en studio</p>
-      <a class="hero-review-badge" href="https://share.google/nxrvuj1jSstlkLhKO" target="_blank" rel="noopener">★★★★★ +60 avis Google</a>
-      <div class="hero-btns">
-        <a href="#contact-inline" class="btn btn-primary">Me contacter</a>
-        <a href="#realisations" class="btn btn-outline">Voir les réalisations</a>
+    <div class="hero-fade" aria-hidden="true"></div>
+    <div class="hero-caption">
+      <div class="container">
+        <p class="hero-kicker">Shooting</p>
+        <h1>Photographe portrait et&nbsp;lifestyle à&nbsp;Montpellier</h1>
+        <p class="hero-lead">Portrait, mode, famille et&nbsp;nouveau-né</p>
       </div>
     </div>
+    <a href="#realisations" class="hero-scroll" aria-label="Voir les réalisations"><span></span></a>
   </section>
 
   <section class="section" id="realisations">
     <div class="container">
+      <h2 class="sr-only">Réalisations</h2>
       <div class="project-block" id="muflon-tangzzz">
-        <h3 class="project-title">Shooting Muflon × Tangzzz</h3>
-        <p class="project-type">Shooting sportif, Brand content, Course à pied, Montpellier</p>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-bottom:4px;">
-          <div style="overflow:hidden;aspect-ratio:2/3;"><img src="img/muflon-06.jpg" alt="Tangzzz portrait Muflon jacket rose ciel bleu" style="width:100%;height:100%;object-fit:cover;" loading="lazy"></div> <!-- // MODIF -->
-          <div style="overflow:hidden;aspect-ratio:2/3;"><img src="img/muflon-04.jpg" alt="Tangzzz portrait cap Muflon lunettes bleues" style="width:100%;height:100%;object-fit:cover;" loading="lazy"></div>
-          <div style="overflow:hidden;aspect-ratio:2/3;"><img src="img/muflon-05.jpg" alt="Tangzzz cap Muflon flou cinématique" style="width:100%;height:100%;object-fit:cover;" loading="lazy"></div>
-        </div>
-        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:4px;margin-bottom:4px;">
-          <div style="overflow:hidden;aspect-ratio:2/3;"><img src="img/muflon-02.jpg" alt="Tangzzz montre running Muflon jacket bleu rose" style="width:100%;height:100%;object-fit:cover;" loading="lazy"></div>
-          <div style="overflow:hidden;aspect-ratio:2/3;"><img src="img/muflon-03.jpg" alt="Tangzzz départ course Muflon jacket rose" style="width:100%;height:100%;object-fit:cover;" loading="lazy"></div>
-        </div>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-bottom:4px;">
-          <div style="overflow:hidden;aspect-ratio:2/3;"><img src="img/muflon-01.jpg" alt="Tangzzz course à pied Montpellier tatouages donner recevoir" style="width:100%;height:100%;object-fit:cover;" loading="lazy"></div> <!-- // MODIF -->
-          <div style="overflow:hidden;aspect-ratio:2/3;"><img src="img/muflon-07.jpg" alt="Tangzzz running de dos Muflon rose" style="width:100%;height:100%;object-fit:cover;" loading="lazy"></div>
-          <div style="overflow:hidden;aspect-ratio:2/3;"><img src="img/muflon-08.jpg" alt="Tangzzz running contre-jour soleil" style="width:100%;height:100%;object-fit:cover;" loading="lazy"></div>
-        </div>
-        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:4px;">
-          <div style="overflow:hidden;aspect-ratio:2/3;"><img src="img/muflon-09.jpg" alt="Tangzzz vitesse pose lente course" style="width:100%;height:100%;object-fit:cover;" loading="lazy"></div>
-          <div style="overflow:hidden;aspect-ratio:2/3;"><img src="img/muflon-10.jpg" alt="Tangzzz angle bas dynamique running Muflon" style="width:100%;height:100%;object-fit:cover;" loading="lazy"></div>
+        <h3 class="project-title">Shooting Muflon ×&nbsp;Tangzzz</h3>
+        <p class="project-type">Shooting sportif, Brand content, Course à&nbsp;pied, Montpellier</p>
+        <div class="gallery">
+          <figure class="g-item" style="--r:0.667"><img src="img/thumbs/muflon-06.jpg" data-full="img/muflon-06.jpg" alt="Tangzzz portrait Muflon jacket rose ciel bleu" width="4082" height="6123" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.667"><img src="img/thumbs/muflon-04.jpg" data-full="img/muflon-04.jpg" alt="Tangzzz portrait cap Muflon lunettes bleues" width="4672" height="7008" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.667"><img src="img/thumbs/muflon-05.jpg" data-full="img/muflon-05.jpg" alt="Tangzzz cap Muflon flou cinématique" width="4096" height="6144" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.667"><img src="img/thumbs/muflon-02.jpg" data-full="img/muflon-02.jpg" alt="Tangzzz montre running Muflon jacket bleu rose" width="4672" height="7008" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.667"><img src="img/thumbs/muflon-03.jpg" data-full="img/muflon-03.jpg" alt="Tangzzz départ course Muflon jacket rose" width="4672" height="7008" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.667"><img src="img/thumbs/muflon-01.jpg" data-full="img/muflon-01.jpg" alt="Tangzzz course à pied Montpellier tatouages donner recevoir" width="3967" height="5950" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.667"><img src="img/thumbs/muflon-07.jpg" data-full="img/muflon-07.jpg" alt="Tangzzz running de dos Muflon rose" width="4153" height="6229" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.667"><img src="img/thumbs/muflon-08.jpg" data-full="img/muflon-08.jpg" alt="Tangzzz running contre-jour soleil" width="2927" height="4391" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.667"><img src="img/thumbs/muflon-09.jpg" data-full="img/muflon-09.jpg" alt="Tangzzz vitesse pose lente course" width="4020" height="6030" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.667"><img src="img/thumbs/muflon-10.jpg" data-full="img/muflon-10.jpg" alt="Tangzzz angle bas dynamique running Muflon" width="4672" height="7008" loading="lazy" decoding="async"></figure>
         </div>
       </div>
 
       <div class="project-block" id="victoria">
         <h3 class="project-title">Victoria, Miss Gard</h3>
-        <p class="project-type">Portrait éditorial, Miss Gard 2021, 3 looks, Shooting extérieur</p>
-        <p class="video-label">Look 1 : tropical</p>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px;align-items:start;"><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf4131.jpg" alt="Victoria tropical" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf4212.jpg" alt="Victoria golden hour" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf4158.jpg" alt="Victoria gros plan" style="width:100%;height:auto;display:block;" loading="lazy"></div></div>        <p class="video-label">Look 2 : jardin méditerranéen</p>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px;align-items:start;"><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf4339.jpg" alt="Victoria jardin" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf4310.jpg" alt="Victoria close up" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf4329.jpg" alt="Victoria allongee" style="width:100%;height:auto;display:block;" loading="lazy"></div></div>        <p class="video-label">Look 3 : piscine estivale</p>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px;align-items:start;"><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf4427.jpg" alt="Victoria piscine" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf4401.jpg" alt="Victoria main cheveux" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf4407.jpg" alt="Victoria piscine pensif" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf4494.jpg" alt="Victoria chapeau paille" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf4418.jpg" alt="Victoria yeux fermes" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf4445.jpg" alt="Victoria lecture" style="width:100%;height:auto;display:block;" loading="lazy"></div></div>
+        <p class="project-type">Portrait éditorial, Miss Gard 2021, 3&nbsp;looks, Shooting extérieur</p>
+        <p class="video-label">Look 1&nbsp;: tropical</p>
+        <div class="gallery">
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf4131.jpg" data-full="img/-dsf4131.jpg" alt="Victoria tropical" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf4212.jpg" data-full="img/-dsf4212.jpg" alt="Victoria golden hour" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf4158.jpg" data-full="img/-dsf4158.jpg" alt="Victoria gros plan" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+        </div>        <p class="video-label">Look 2&nbsp;: jardin méditerranéen</p>
+        <div class="gallery">
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf4339.jpg" data-full="img/-dsf4339.jpg" alt="Victoria jardin" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf4310.jpg" data-full="img/-dsf4310.jpg" alt="Victoria close up" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf4329.jpg" data-full="img/-dsf4329.jpg" alt="Victoria allongee" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+        </div>        <p class="video-label">Look 3&nbsp;: piscine estivale</p>
+        <div class="gallery">
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf4427.jpg" data-full="img/-dsf4427.jpg" alt="Victoria piscine" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf4401.jpg" data-full="img/-dsf4401.jpg" alt="Victoria main cheveux" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf4407.jpg" data-full="img/-dsf4407.jpg" alt="Victoria piscine pensif" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf4494.jpg" data-full="img/-dsf4494.jpg" alt="Victoria chapeau paille" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf4418.jpg" data-full="img/-dsf4418.jpg" alt="Victoria yeux fermes" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf4445.jpg" data-full="img/-dsf4445.jpg" alt="Victoria lecture" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+        </div>
       </div>
 
       <div class="project-block" id="famille-us">
         <h3 class="project-title">Famille US</h3>
         <p class="project-type">Portrait famille, Jardin botanique, Montpellier</p>
-        <div style="border-radius:4px;overflow:hidden;margin-bottom:8px;"><img src="img/dsc01250.jpg" alt="Couple parents rires balustrade jardin" style="width:100%;height:auto;display:block;" loading="lazy"></div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;align-items:start;"><div style="border-radius:4px;overflow:hidden;"><img src="img/dsc01127.jpg" alt="Mere fils calin balustrade" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;"><img src="img/dsc00901.jpg" alt="Deux freres bras dessus jardin" style="width:100%;height:auto;display:block;" loading="lazy"></div></div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px;align-items:start;"><div style="border-radius:4px;overflow:hidden;" ><img src="img/dsc01005.jpg" alt="Famille escalier parc sourires" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/dsc01036.jpg" alt="Famille cache cache vegetation" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/dsc01098.jpg" alt="Famille main dans la main marche" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/dsc00879.jpg" alt="Enfant panneau 10 years jardin" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/dsc01167.jpg" alt="Pere fils calin balustrade" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/dsc01026.jpg" alt="Portrait famille quatre pont parc" style="width:100%;height:auto;display:block;" loading="lazy"></div></div>
+        <div class="gallery">
+          <figure class="g-item" style="--r:1.500"><img src="img/thumbs/dsc01250.jpg" data-full="img/dsc01250.jpg" alt="Couple parents rires balustrade jardin" width="2000" height="1333" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:1.500"><img src="img/thumbs/dsc01127.jpg" data-full="img/dsc01127.jpg" alt="Mere fils calin balustrade" width="2000" height="1333" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:1.500"><img src="img/thumbs/dsc00901.jpg" data-full="img/dsc00901.jpg" alt="Deux freres bras dessus jardin" width="2000" height="1333" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:1.500"><img src="img/thumbs/dsc01005.jpg" data-full="img/dsc01005.jpg" alt="Famille escalier parc sourires" width="2000" height="1333" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:1.500"><img src="img/thumbs/dsc01036.jpg" data-full="img/dsc01036.jpg" alt="Famille cache cache vegetation" width="2000" height="1333" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:1.500"><img src="img/thumbs/dsc01098.jpg" data-full="img/dsc01098.jpg" alt="Famille main dans la main marche" width="2000" height="1333" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:1.500"><img src="img/thumbs/dsc00879.jpg" data-full="img/dsc00879.jpg" alt="Enfant panneau 10 years jardin" width="2000" height="1333" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:1.500"><img src="img/thumbs/dsc01167.jpg" data-full="img/dsc01167.jpg" alt="Pere fils calin balustrade" width="2000" height="1333" loading="lazy" decoding="async"></figure>
+          <figure class="g-item g-item--feature" style="--pos:50% 45%;--r:1.500"><img src="img/dsc01026.jpg" data-full="img/dsc01026.jpg" alt="Portrait famille quatre pont parc" width="2000" height="1333" loading="lazy" decoding="async"></figure>
+        </div>
       </div>
 
       <div class="project-block" id="alessio-nouveau-ne">
         <!-- // MODIF: nouveau projet Alessio -->
         <h3 class="project-title">Alessio, nouveau-né</h3>
         <p class="project-type">Shooting nouveau-né, Lifestyle famille, Montpellier</p>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px;align-items:start;">
-          <div style="border-radius:4px;overflow:hidden;"><img src="img/alessio-01.png" alt="Parents et nouveau-ne Alessio en interieur" style="width:100%;height:auto;display:block;" loading="lazy"></div>
-          <div style="border-radius:4px;overflow:hidden;"><img src="img/alessio-02.png" alt="Nouveau-ne Alessio endormi sur fauteuil" style="width:100%;height:auto;display:block;" loading="lazy"></div>
-          <div style="border-radius:4px;overflow:hidden;"><img src="img/alessio-03.png" alt="Pere avec Alessio en gros plan" style="width:100%;height:auto;display:block;" loading="lazy"></div>
-          <div style="border-radius:4px;overflow:hidden;"><img src="img/alessio-04.png" alt="Mere tenant Alessio sous un olivier" style="width:100%;height:auto;display:block;" loading="lazy"></div>
-          <div style="border-radius:4px;overflow:hidden;"><img src="img/alessio-05.png" alt="Couple avec Alessio sous les arbres" style="width:100%;height:auto;display:block;" loading="lazy"></div>
-          <div style="border-radius:4px;overflow:hidden;"><img src="img/alessio-06.png" alt="Pere portant Alessio en exterieur" style="width:100%;height:auto;display:block;" loading="lazy"></div>
+        <div class="gallery">
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/alessio-01.jpg" data-full="img/alessio-01.png" alt="Parents et nouveau-ne Alessio en interieur" width="682" height="1024" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/alessio-02.jpg" data-full="img/alessio-02.png" alt="Nouveau-ne Alessio endormi sur fauteuil" width="682" height="1024" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/alessio-03.jpg" data-full="img/alessio-03.png" alt="Pere avec Alessio en gros plan" width="682" height="1024" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:1.501"><img src="img/thumbs/alessio-04.jpg" data-full="img/alessio-04.png" alt="Mere tenant Alessio sous un olivier" width="1024" height="682" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:1.501"><img src="img/thumbs/alessio-05.jpg" data-full="img/alessio-05.png" alt="Couple avec Alessio sous les arbres" width="1024" height="682" loading="lazy" decoding="async"></figure>
+          <figure class="g-item g-item--feature" style="--pos:50% 45%;--r:1.501"><img src="img/alessio-06.png" data-full="img/alessio-06.png" alt="Pere portant Alessio en exterieur" width="1024" height="682" loading="lazy" decoding="async"></figure>
         </div>
       </div>
 
       <div class="project-block" id="johanne">
         <h3 class="project-title">Johanne, campagne</h3>
-        <p class="project-type">Campagne photo &amp; film publicitaire, Portrait mode &amp; lifestyle</p>
+        <p class="project-type">Campagne photo &amp;&nbsp;film publicitaire, Portrait mode &amp;&nbsp;lifestyle</p>
         <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-bottom:12px;">
-          <div style="flex:0 0 360px;max-width:360px;"><p class="video-label">Film publicitaire</p><div class="video-container-v"><iframe src="https://www.youtube.com/embed/jnvw7ItQsn0?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe></div></div>
-          <div style="flex:0 0 360px;max-width:360px;"><p class="video-label">Behind the scenes</p><div class="video-container-v"><iframe src="https://www.youtube.com/embed/D0t5bWi-mhk?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe></div></div>
+          <div style="flex:0 0 360px;max-width:360px;"><p class="video-label">Film publicitaire</p><div class="video-container-v"><button type="button" class="yt-facade" data-id="jnvw7ItQsn0" data-title="Johanne, campagne : Film publicitaire" aria-label="Lire la vidéo : Johanne, campagne : Film publicitaire"><img class="yt-thumb" src="https://i.ytimg.com/vi/jnvw7ItQsn0/hqdefault.jpg" data-fallback="https://i.ytimg.com/vi/jnvw7ItQsn0/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-play" aria-hidden="true"></span></button></div></div>
+          <div style="flex:0 0 360px;max-width:360px;"><p class="video-label">Behind the scenes</p><div class="video-container-v"><button type="button" class="yt-facade" data-id="D0t5bWi-mhk" data-title="Johanne, campagne : Behind the scenes" aria-label="Lire la vidéo : Johanne, campagne : Behind the scenes"><img class="yt-thumb" src="https://i.ytimg.com/vi/D0t5bWi-mhk/hqdefault.jpg" data-fallback="https://i.ytimg.com/vi/D0t5bWi-mhk/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-play" aria-hidden="true"></span></button></div></div>
         </div>
         <p class="video-label">Look 1</p>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:8px;align-items:start;"><div style="border-radius:4px;overflow:hidden;"><img src="img/-dsf3854.jpg" alt="Johanne portrait mode robe blanche" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;"><img src="img/-dsf3776.jpg" alt="Johanne low angle sunglasses" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;"><img src="img/-dsf3683.jpg" alt="Johanne golden hour nature" style="width:100%;height:auto;display:block;" loading="lazy"></div></div>
-        <div style="display:flex;gap:8px;justify-content:center;margin-bottom:12px;"><div style="border-radius:4px;overflow:hidden;width:calc(33.333% - 4px);"><img src="img/-dsf3745.jpg" alt="Johanne lifestyle walking" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;width:calc(33.333% - 4px);"><img src="img/-dsf3649.jpg" alt="Johanne portrait naturel bouleaux" style="width:100%;height:auto;display:block;" loading="lazy"></div></div>
+        <div class="gallery">
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf3854.jpg" data-full="img/-dsf3854.jpg" alt="Johanne portrait mode robe blanche" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf3776.jpg" data-full="img/-dsf3776.jpg" alt="Johanne low angle sunglasses" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf3683.jpg" data-full="img/-dsf3683.jpg" alt="Johanne golden hour nature" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf3745.jpg" data-full="img/-dsf3745.jpg" alt="Johanne lifestyle walking" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf3649.jpg" data-full="img/-dsf3649.jpg" alt="Johanne portrait naturel bouleaux" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+        </div>
         <p class="video-label">Look 2</p>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px;align-items:start;"><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf3433.jpg" alt="Johanne bandana vintage" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf3447.jpg" alt="Johanne profil bandana" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf3494.jpg" alt="Johanne portrait chemise bleue" style="width:100%;height:auto;display:block;" loading="lazy"></div></div>
+        <div class="gallery">
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf3433.jpg" data-full="img/-dsf3433.jpg" alt="Johanne bandana vintage" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf3447.jpg" data-full="img/-dsf3447.jpg" alt="Johanne profil bandana" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf3494.jpg" data-full="img/-dsf3494.jpg" alt="Johanne portrait chemise bleue" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+        </div>
         <p class="video-label">Look 3</p>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px;align-items:start;"><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf3514.jpg" alt="Johanne pose cheveux" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf3502.jpg" alt="Johanne gros plan feuillage" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf3530.jpg" alt="Johanne sourire close-up" style="width:100%;height:auto;display:block;" loading="lazy"></div></div>
+        <div class="gallery">
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf3514.jpg" data-full="img/-dsf3514.jpg" alt="Johanne pose cheveux" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf3502.jpg" data-full="img/-dsf3502.jpg" alt="Johanne gros plan feuillage" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf3530.jpg" data-full="img/-dsf3530.jpg" alt="Johanne sourire close-up" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+        </div>
       </div>
 
       <div class="project-block" id="kjaerbede">
         <h3 class="project-title">Martin A.Kjærbede</h3>
         <p class="project-type">Campagne lifestyle, Lunettes, Magazine Hôtelier Privé, Sète</p>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px;align-items:start;"><div style="border-radius:4px;overflow:hidden;" ><img src="img/img-5442.jpg" alt="Kjaerbede portrait low angle sky" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/img-5445.jpg" alt="Kjaerbede portrait pont quai Sete" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/img-5444.jpg" alt="Kjaerbede close up rambarde mer" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/img-5447.jpg" alt="Martin pour A.Kjærbede lunettes portrait" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/img-5453.jpg" alt="Kjaerbede lifestyle street walking" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/img-5459.jpg" alt="Kjaerbede campagne bord de mer Sete" style="width:100%;height:auto;display:block;" loading="lazy"></div></div>
+        <div class="gallery">
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/img-5442.jpg" data-full="img/img-5442.jpg" alt="Kjaerbede portrait low angle sky" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/img-5445.jpg" data-full="img/img-5445.jpg" alt="Kjaerbede portrait pont quai Sete" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/img-5444.jpg" data-full="img/img-5444.jpg" alt="Kjaerbede close up rambarde mer" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/img-5447.jpg" data-full="img/img-5447.jpg" alt="Martin pour A.Kjærbede lunettes portrait" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/img-5453.jpg" data-full="img/img-5453.jpg" alt="Kjaerbede lifestyle street walking" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/img-5459.jpg" data-full="img/img-5459.jpg" alt="Kjaerbede campagne bord de mer Sete" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+        </div>
       </div>
 
       <div class="project-block" id="anthony">
         <h3 class="project-title">Anthony, portrait</h3>
         <p class="project-type">Portrait lifestyle, Style méditerranéen, Sète</p>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px;align-items:start;"><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf4679.jpg" alt="Anthony portrait mode rue" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf4652.jpg" alt="Anthony portrait bord mer phare" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf4977.jpg" alt="Anthony ruelle coloree dos" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf4847.jpg" alt="Anthony tatouage bras levé ciel" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf4900.jpg" alt="Anthony portrait rue vers mer" style="width:100%;height:auto;display:block;" loading="lazy"></div><div style="border-radius:4px;overflow:hidden;" ><img src="img/-dsf5177.jpg" alt="Anthony portrait assis quai" style="width:100%;height:auto;display:block;" loading="lazy"></div></div>
+        <div class="gallery">
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf4679.jpg" data-full="img/-dsf4679.jpg" alt="Anthony portrait mode rue" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf4652.jpg" data-full="img/-dsf4652.jpg" alt="Anthony portrait bord mer phare" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf4977.jpg" data-full="img/-dsf4977.jpg" alt="Anthony ruelle coloree dos" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf4847.jpg" data-full="img/-dsf4847.jpg" alt="Anthony tatouage bras levé ciel" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf4900.jpg" data-full="img/-dsf4900.jpg" alt="Anthony portrait rue vers mer" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/-dsf5177.jpg" data-full="img/-dsf5177.jpg" alt="Anthony portrait assis quai" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+        </div>
       </div>
       <div class="project-block" id="diana">
         <h3 class="project-title">Diana</h3>
         <p class="project-type">Shooting photo, Enfant, Nouveau-né, Lumière naturelle</p>
-        <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:12px;">
-          <div style="grid-column:span 2;grid-row:span 2;border-radius:4px;overflow:hidden;"><img src="img/shooting-diana-dsc05844.jpg" alt="Fillette souriante en robe rose et couronne de fleurs" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy"></div>
-          <div style="grid-column:span 2;aspect-ratio:3/2;border-radius:4px;overflow:hidden;"><img src="img/shooting-diana-dsc05826.jpg" alt="Fillette en robe de tulle rose tenant un nouveau-né dans l'herbe" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy"></div>
-          <div style="grid-column:span 2;aspect-ratio:3/2;border-radius:4px;overflow:hidden;"><img src="img/shooting-diana-dsc05863.jpg" alt="Fillette tournoyant dans sa robe de tulle rose" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy"></div>
-          <div style="grid-column:span 2;aspect-ratio:3/2;border-radius:4px;overflow:hidden;"><img src="img/shooting-diana-dsc05865.jpg" alt="Fillette à quatre pattes dans l'herbe, sourire complice" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy"></div>
-          <div style="grid-column:span 2;aspect-ratio:3/2;border-radius:4px;overflow:hidden;"><img src="img/shooting-diana-dsc05880.jpg" alt="Fillette serrant son chien labrador dans ses bras" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy"></div>
-          <div style="grid-column:span 3;aspect-ratio:3/2;border-radius:4px;overflow:hidden;"><img src="img/shooting-diana-dsc05901.jpg" alt="Nouveau-né allongé sur une couverture tricotée en lumière naturelle" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy"></div>
-          <div style="grid-column:span 3;aspect-ratio:3/2;border-radius:4px;overflow:hidden;"><img src="img/shooting-diana-dsc05920.jpg" alt="Chaussons roses de nouveau-né en gros plan" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy"></div>
+        <div class="gallery">
+          <figure class="g-item" style="--r:0.666"><img src="img/thumbs/shooting-diana-dsc05844.jpg" data-full="img/shooting-diana-dsc05844.jpg" alt="Fillette souriante en robe rose et couronne de fleurs" width="1333" height="2000" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:1.500"><img src="img/thumbs/shooting-diana-dsc05863.jpg" data-full="img/shooting-diana-dsc05863.jpg" alt="Fillette tournoyant dans sa robe de tulle rose" width="2000" height="1333" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:1.500"><img src="img/thumbs/shooting-diana-dsc05865.jpg" data-full="img/shooting-diana-dsc05865.jpg" alt="Fillette à quatre pattes dans l'herbe, sourire complice" width="2000" height="1333" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:1.500"><img src="img/thumbs/shooting-diana-dsc05880.jpg" data-full="img/shooting-diana-dsc05880.jpg" alt="Fillette serrant son chien labrador dans ses bras" width="2000" height="1333" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:1.500"><img src="img/thumbs/shooting-diana-dsc05901.jpg" data-full="img/shooting-diana-dsc05901.jpg" alt="Nouveau-né allongé sur une couverture tricotée en lumière naturelle" width="2000" height="1333" loading="lazy" decoding="async"></figure>
+          <figure class="g-item" style="--r:1.500"><img src="img/thumbs/shooting-diana-dsc05920.jpg" data-full="img/shooting-diana-dsc05920.jpg" alt="Chaussons roses de nouveau-né en gros plan" width="2000" height="1333" loading="lazy" decoding="async"></figure>
+          <figure class="g-item g-item--feature" style="--pos:50% 50%;--r:1.500"><img src="img/shooting-diana-dsc05826.jpg" data-full="img/shooting-diana-dsc05826.jpg" alt="Fillette en robe de tulle rose tenant un nouveau-né dans l'herbe" width="2000" height="1333" loading="lazy" decoding="async"></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-cta">
+    <div class="container">
+      <div class="cta-band">
+        <div class="cta-band-copy">
+          <p class="cta-band-title">Envie d'une séance photo&nbsp;?</p>
+          <p class="cta-band-text">Portrait, famille, mode ou nouveau-né, en extérieur ou en studio. <a href="https://share.google/nxrvuj1jSstlkLhKO" target="_blank" rel="noopener" class="cta-band-reviews">★★★★★ +60&nbsp;avis Google</a></p>
+        </div>
+        <div class="cta-band-actions">
+          <a href="#contact-inline" class="btn btn-primary">Me contacter</a>
+          <a href="https://www.instagram.com/mathieugaillardpro/" target="_blank" rel="noopener" class="btn btn-outline">Instagram</a>
         </div>
       </div>
     </div>
@@ -159,10 +227,10 @@
     <div class="container">
       <p class="section-label">Types de séances</p>
       <h2 class="section-title">Ce que je propose</h2>
-      <div class="features">
+      <div class="features features-list">
       <div class="feature"><p class="feature-title">Portrait professionnel</p><p class="feature-desc">Photo de profil LinkedIn, site web, CV. Cadrage soigné, lumière naturelle ou studio.</p></div>
-      <div class="feature"><p class="feature-title">Séance couple &amp; famille</p><p class="feature-desc">Photos naturelles et complices, en extérieur à Montpellier. shooting authentiques dans un lieu qui vous ressemble.</p></div>
-      <div class="feature"><p class="feature-title">Book &amp; création</p><p class="feature-desc">Book mannequin, série éditoriale, portrait artistique. Direction artistique et retouche avancée.</p></div>
+      <div class="feature"><p class="feature-title">Séance couple &amp;&nbsp;famille</p><p class="feature-desc">Photos naturelles et complices, en extérieur à Montpellier. shooting authentiques dans un lieu qui vous ressemble.</p></div>
+      <div class="feature"><p class="feature-title">Book &amp;&nbsp;création</p><p class="feature-desc">Book mannequin, série éditoriale, portrait artistique. Direction artistique et retouche avancée.</p></div>
       <div class="feature"><p class="feature-title">Vidéo esthétique</p><p class="feature-desc">Contenus créatifs premium pour réseaux sociaux, films de mode ou personal branding. Mise en scène et colorimétrie soignées.</p></div>
       </div>
     </div>
@@ -197,19 +265,19 @@
       <div class="features features-steps">
       <div class="feature"><span class="feature-step">01</span><p class="feature-title">Préparation</p><p class="feature-desc">On échange sur vos envies, le lieu et les looks. Je prépare un moodboard si besoin.</p></div>
       <div class="feature"><span class="feature-step">02</span><p class="feature-title">Shooting</p><p class="feature-desc">Séance en extérieur ou en studio. Je vous guide naturellement pour des poses authentiques.</p></div>
-      <div class="feature"><span class="feature-step">03</span><p class="feature-title">Livraison</p><p class="feature-desc">Galerie de photos retouchées sous 7 à 10 jours, livrée en HD via lien de téléchargement.</p></div>
+      <div class="feature"><span class="feature-step">03</span><p class="feature-title">Livraison</p><p class="feature-desc">Galerie retouchée livrée sous 72 h pour la formule Express, sous 7 à 10 jours pour les séances plus longues, en HD via une galerie privée.</p></div>
       </div>
     </div>
   </section>
 
   <section class="section" id="contact-inline">
-    <video autoplay loop muted playsinline class="video-background" preload="auto" aria-hidden="true">
-      <source src="video/devis-bg.mp4" type="video/mp4">
+    <video autoplay loop muted playsinline class="video-background" preload="none" data-lazy-src="video/devis-bg-720.mp4" aria-hidden="true">
       Votre navigateur ne supporte pas les vidéos HTML5.
     </video>
     <div class="container">
-      <h2 class="section-title" style="margin-bottom:20px;">Demande de devis</h2>
+      <h2 class="section-title" style="margin-bottom:20px;">Demande de&nbsp;devis</h2>
       <form id="contact-form" action="https://formspree.io/f/mdayqrwl" method="POST">
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp-field">
         <input type="hidden" name="_subject" value="Devis Shooting (site)">
         <input type="hidden" name="page_source" value="shooting">
         <div class="contact-grid">
@@ -238,6 +306,8 @@
           </div>
         </div>
       </form>
+      <p><br></p> 
+<p class="form-legal" style="text-align: center;">Vos informations servent uniquement à répondre à votre demande et ne sont jamais revendues. <a href="/politique-confidentialite">Politique de confidentialité</a>.</p>
       <div id="form-success" style="display:none;text-align:center;padding:40px;">
         <p style="font-size:1.1rem;font-weight:600;margin-bottom:8px;">Message envoyé !</p>
         <p style="color:var(--text3);margin-bottom:24px;">Je vous réponds sous 24h.</p>
@@ -246,8 +316,8 @@
     </div>
   </section>
 
-  <footer class="footer"><div class="container"><div class="footer-inner"><p class="footer-copy">© 2026 Mathieu Gaillard Pro · Vidéaste &amp; Photographe à Montpellier</p><div class="footer-social"><a href="https://www.instagram.com/mathieugaillardpro/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://www.youtube.com/@mathieugaillardpro" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75,15.02 15.5,12 9.75,8.98" fill="currentColor" stroke="none"/></svg></a><a href="https://www.linkedin.com/in/mathieugaillardpro/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></div><div class="footer-links"><a href="contact">Contact</a><a href="mentions-legales">Mentions légales</a></div></div></div></footer>
-  <script src="js/main.js"></script>
+  <footer class="footer"><div class="container"><div class="footer-inner"><p class="footer-copy">© 2026 Mathieu Gaillard Pro · Vidéaste &amp; Photographe à Montpellier</p><div class="footer-social"><a href="https://www.instagram.com/mathieugaillardpro/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://www.youtube.com/@mathieugaillardpro" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75,15.02 15.5,12 9.75,8.98" fill="currentColor" stroke="none"/></svg></a><a href="https://www.linkedin.com/in/mathieugaillardpro/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></div><div class="footer-links"><a href="contact">Contact</a><a href="mentions-legales">Mentions légales</a><a href="/politique-confidentialite">Confidentialité</a></div></div></div></footer>
+  <script src="js/main.js?v=20260930g"></script>
   <script>
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     var hv = document.querySelector('.page-hero-cat video');

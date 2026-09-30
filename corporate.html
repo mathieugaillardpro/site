@@ -10,16 +10,24 @@
   <meta property="og:description" content="Films corporate et brand content à Montpellier : interviews, suivi de chantier, films de marque. Références : HEXIS Alpine F1, Biopulz, Soprema, Égéa Voyages.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mathieugaillardpro.fr/corporate">
-  <meta property="og:image" content="https://mathieugaillardpro.fr/img/og-default.jpg">
+  <meta property="og:image" content="https://mathieugaillardpro.fr/img/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mathieu Gaillard, vidéaste et photographe à Montpellier">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mathieugaillardpro.fr/img/og-image.jpg">
   <link rel="canonical" href="https://mathieugaillardpro.fr/corporate">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<link rel="preload" as="image" href="img/posters/hero-corporate.jpg" fetchpriority="high">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://i.ytimg.com; media-src 'self'; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; frame-src https://www.youtube-nocookie.com https://www.youtube.com; connect-src 'self' https://formspree.io; form-action https://formspree.io; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+  <link rel="preload" href="/fonts/montserrat-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/montserrat-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=20260930g">
 </head>
 <body>
   <nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo">
@@ -38,70 +46,84 @@
       <a href="contact" class="nav-cta">Contact</a><button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button></div><div class="nav-mobile"><a href="corporate">Corporate</a><a href="evenementiel">Événementiel</a><a href="immobilier">Immobilier</a><a href="mariage">Mariage</a><a href="reseaux-sociaux">Réseaux Sociaux</a><a href="shooting">Shooting</a>
       <a href="voyage">Voyage</a><a href="contact">Contact</a></div></nav>
 
-  <section class="page-hero page-hero-cat">
-    <div class="hero-video" style="background-image:url('img/hero-corporate.jpg');">
-      <video autoplay muted loop playsinline preload="metadata" poster="img/hero-corporate.jpg">
-        <source src="video/website-corporate.mp4" type="video/mp4">
+  <section class="page-hero page-hero-cat page-hero-video">
+    <div class="hero-video" style="background-image:url('img/posters/hero-corporate.jpg');">
+      <video autoplay muted loop playsinline preload="metadata" poster="img/posters/hero-corporate.jpg">
+        <source src="video/website-corporate-1080.mp4" type="video/mp4" media="(min-width: 900px)">
+        <source src="video/website-corporate-720.mp4" type="video/mp4">
       </video>
     </div>
-    <div class="hero-gradient" aria-hidden="true"></div>
-    <div class="container">
-      <p class="hero-kicker">Corporate</p>
-      <h1>Film corporate et vidéo d'entreprise à Montpellier</h1>
-      <p class="hero-lead">Films de marque, interviews et suivis de chantier qui racontent votre entreprise</p>
-      <a class="hero-review-badge" href="https://share.google/nxrvuj1jSstlkLhKO" target="_blank" rel="noopener">★★★★★ +60 avis Google</a>
-      <div class="hero-btns">
-        <a href="#contact-inline" class="btn btn-primary">Me contacter</a>
-        <a href="#realisations" class="btn btn-outline">Voir les réalisations</a>
+    <div class="hero-fade" aria-hidden="true"></div>
+    <div class="hero-caption">
+      <div class="container">
+        <p class="hero-kicker">Corporate</p>
+        <h1>Film corporate et&nbsp;vidéo d'entreprise à&nbsp;Montpellier</h1>
+        <p class="hero-lead">Films de&nbsp;marque, interviews et&nbsp;suivis de&nbsp;chantier</p>
       </div>
     </div>
+    <a href="#realisations" class="hero-scroll" aria-label="Voir les réalisations"><span></span></a>
   </section>
 
   <section class="section" id="realisations">
     <div class="container">
-      <div class="project-block" id="hexis-alpine">
-        <h3 class="project-title">HEXIS × Alpine F1 Team</h3>
+      <h2 class="sr-only">Réalisations</h2>
+      <div class="project-block project-block--split" id="hexis-alpine">
+        <h3 class="project-title">HEXIS ×&nbsp;Alpine F1 Team</h3>
         <p class="project-type">Covering, partenariat technique, Alpine F1 Team</p>
         <div class="video-wrapper">
-          <iframe src="https://www.youtube.com/embed/_jGaPDaFRPM?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          <button type="button" class="yt-facade" data-id="_jGaPDaFRPM" data-title="HEXIS × Alpine F1 Team" aria-label="Lire la vidéo : HEXIS × Alpine F1 Team"><img class="yt-thumb" src="https://i.ytimg.com/vi/_jGaPDaFRPM/sddefault.jpg" data-fallback="https://i.ytimg.com/vi/_jGaPDaFRPM/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-play" aria-hidden="true"></span></button>
         </div>
       </div>
 
-      <div class="project-block">
+      <div class="project-block project-block--split">
         <h3 class="project-title">Eloane Biopulz</h3>
-        <p class="project-type">Film produit, robot de désinfection, innovation santé</p>
+        <p class="project-type">Film produit, robot de&nbsp;désinfection, innovation santé</p>
         <div class="video-wrapper">
-          <iframe src="https://www.youtube.com/embed/hcuFfpKvJDg?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          <button type="button" class="yt-facade" data-id="hcuFfpKvJDg" data-title="Eloane Biopulz" aria-label="Lire la vidéo : Eloane Biopulz"><img class="yt-thumb" src="https://i.ytimg.com/vi/hcuFfpKvJDg/sddefault.jpg" data-fallback="https://i.ytimg.com/vi/hcuFfpKvJDg/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-play" aria-hidden="true"></span></button>
         </div>
       </div>
 
-      <div class="project-block" id="soprema">
+      <div class="project-block project-block--split" id="soprema">
         <h3 class="project-title">Soprema</h3>
         <p class="project-type">Film corporate, BTP, Rénovation, Isolation, Interview, Cévennes</p>
-        <p class="video-label">Suivi de chantier pour Soprema dans les Cévennes : rénovation d'une maison, isolation, pose des murs et de la toiture. Avancée des travaux, aspects techniques et interview.</p>
         <div class="video-wrapper">
-          <iframe src="https://www.youtube.com/embed/v9sZXr25wyY?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          <button type="button" class="yt-facade" data-id="v9sZXr25wyY" data-title="Soprema" aria-label="Lire la vidéo : Soprema"><img class="yt-thumb" src="https://i.ytimg.com/vi/v9sZXr25wyY/sddefault.jpg" data-fallback="https://i.ytimg.com/vi/v9sZXr25wyY/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-play" aria-hidden="true"></span></button>
         </div>
       </div>
 
-      <div class="project-block">
+      <div class="project-block project-block--split">
         <h3 class="project-title">Égéa Voyages</h3>
         <p class="project-type">Film corporate, Quentin, finaliste Travel Agent Cup</p>
         <div class="video-wrapper">
-          <iframe src="https://www.youtube.com/embed/fvtUWAVTomE?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          <button type="button" class="yt-facade" data-id="fvtUWAVTomE" data-title="Égéa Voyages" aria-label="Lire la vidéo : Égéa Voyages"><img class="yt-thumb" src="https://i.ytimg.com/vi/fvtUWAVTomE/sddefault.jpg" data-fallback="https://i.ytimg.com/vi/fvtUWAVTomE/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-play" aria-hidden="true"></span></button>
         </div>
       </div>
 
       <div class="project-block">
         <h3 class="project-title">Gaillard Immobilier</h3>
-        <p class="project-type">Film corporate, présentation agence &amp; interview, Sète</p>
-        <p class="video-label">Vidéo de présentation de l'agence</p>
+        <p class="project-type">Film corporate, présentation agence &amp;&nbsp;interview, Sète</p>
+        <p class="video-label">Vidéo de&nbsp;présentation de&nbsp;l'agence</p>
         <div class="video-wrapper">
-          <iframe src="https://www.youtube.com/embed/16F5iIgU7Vw?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          <button type="button" class="yt-facade" data-id="16F5iIgU7Vw" data-title="Gaillard Immobilier : Vidéo de présentation de l&#x27;agence" aria-label="Lire la vidéo : Gaillard Immobilier : Vidéo de présentation de l&#x27;agence"><img class="yt-thumb" src="https://i.ytimg.com/vi/16F5iIgU7Vw/sddefault.jpg" data-fallback="https://i.ytimg.com/vi/16F5iIgU7Vw/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-play" aria-hidden="true"></span></button>
         </div>
         <div style="display:grid;grid-template-columns:3fr 1fr;gap:8px;margin-top:16px;align-items:start;">
-          <div><p class="video-label">Interview, format horizontal</p><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/V66ndMxAmmM?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div></div>
-          <div><p class="video-label">Interview, format vertical</p><div class="video-container-v"><iframe src="https://www.youtube.com/embed/bcvCfiIWC-Y?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div></div>
+          <div><p class="video-label">Interview, format horizontal</p><div class="video-wrapper"><button type="button" class="yt-facade" data-id="V66ndMxAmmM" data-title="Gaillard Immobilier : Interview, format horizontal" aria-label="Lire la vidéo : Gaillard Immobilier : Interview, format horizontal"><img class="yt-thumb" src="https://i.ytimg.com/vi/V66ndMxAmmM/sddefault.jpg" data-fallback="https://i.ytimg.com/vi/V66ndMxAmmM/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-play" aria-hidden="true"></span></button></div></div>
+          <div><p class="video-label">Interview, format vertical</p><div class="video-container-v"><button type="button" class="yt-facade" data-id="bcvCfiIWC-Y" data-title="Gaillard Immobilier : Interview, format vertical" aria-label="Lire la vidéo : Gaillard Immobilier : Interview, format vertical"><img class="yt-thumb" src="https://i.ytimg.com/vi/bcvCfiIWC-Y/hqdefault.jpg" data-fallback="https://i.ytimg.com/vi/bcvCfiIWC-Y/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-play" aria-hidden="true"></span></button></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-cta">
+    <div class="container">
+      <div class="cta-band">
+        <div class="cta-band-copy">
+          <p class="cta-band-title">Un film pour votre entreprise&nbsp;?</p>
+          <p class="cta-band-text">Brief gratuit, devis sous 24 h, tournage partout en France. <a href="https://share.google/nxrvuj1jSstlkLhKO" target="_blank" rel="noopener" class="cta-band-reviews">★★★★★ +60&nbsp;avis Google</a></p>
+        </div>
+        <div class="cta-band-actions">
+          <a href="#contact-inline" class="btn btn-primary">Me contacter</a>
+          <a href="https://www.instagram.com/mathieugaillardpro/" target="_blank" rel="noopener" class="btn btn-outline">Instagram</a>
         </div>
       </div>
     </div>
@@ -109,8 +131,8 @@
   <section class="section">
     <div class="container">
       <p class="section-label">Ce que je propose</p>
-      <h2 class="section-title">Films corporate à Montpellier et toute la France</h2>
-      <div class="features">
+      <h2 class="section-title">Films corporate à&nbsp;Montpellier et&nbsp;toute la&nbsp;France</h2>
+      <div class="features features-list">
       <div class="feature"><p class="feature-title">Film corporate</p><p class="feature-desc">Présentez votre entreprise, vos valeurs et votre équipe dans un film professionnel.</p></div>
       <div class="feature"><p class="feature-title">Interview vidéo</p><p class="feature-desc">Captation audio, cadrage soigné, mise en confiance des intervenants pour des témoignages authentiques.</p></div>
       <div class="feature"><p class="feature-title">Film produit</p><p class="feature-desc">Démonstration technique, présentation produit ou service avec un rendu clair et impactant.</p></div>
@@ -131,13 +153,13 @@
   </section>
 
   <section class="section" id="contact-inline">
-    <video autoplay loop muted playsinline class="video-background" preload="auto" aria-hidden="true">
-      <source src="video/devis-bg.mp4" type="video/mp4">
+    <video autoplay loop muted playsinline class="video-background" preload="none" data-lazy-src="video/devis-bg-720.mp4" aria-hidden="true">
       Votre navigateur ne supporte pas les vidéos HTML5.
     </video>
     <div class="container">
-      <h2 class="section-title" style="margin-bottom:20px;">Demande de devis</h2>
+      <h2 class="section-title" style="margin-bottom:20px;">Demande de&nbsp;devis</h2>
       <form id="contact-form" action="https://formspree.io/f/mdayqrwl" method="POST">
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp-field">
         <input type="hidden" name="_subject" value="Devis Corporate (site)">
         <input type="hidden" name="page_source" value="corporate">
         <div class="contact-grid">
@@ -166,6 +188,8 @@
           </div>
         </div>
       </form>
+      <p><br></p> 
+<p class="form-legal" style="text-align: center;">Vos informations servent uniquement à répondre à votre demande et ne sont jamais revendues. <a href="/politique-confidentialite">Politique de confidentialité</a>.</p>
       <div id="form-success" style="display:none;text-align:center;padding:40px;">
         <p style="font-size:1.1rem;font-weight:600;margin-bottom:8px;">Message envoyé !</p>
         <p style="color:var(--text3);margin-bottom:24px;">Je vous réponds sous 24h.</p>
@@ -174,8 +198,8 @@
     </div>
   </section>
 
-  <footer class="footer"><div class="container"><div class="footer-inner"><p class="footer-copy">© 2026 Mathieu Gaillard Pro · Vidéaste &amp; Photographe à Montpellier</p><div class="footer-social"><a href="https://www.instagram.com/mathieugaillardpro/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://www.youtube.com/@mathieugaillardpro" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75,15.02 15.5,12 9.75,8.98" fill="currentColor" stroke="none"/></svg></a><a href="https://www.linkedin.com/in/mathieugaillardpro/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></div><div class="footer-links"><a href="contact">Contact</a><a href="mentions-legales">Mentions légales</a></div></div></div></footer>
-  <script src="js/main.js"></script>
+  <footer class="footer"><div class="container"><div class="footer-inner"><p class="footer-copy">© 2026 Mathieu Gaillard Pro · Vidéaste &amp; Photographe à Montpellier</p><div class="footer-social"><a href="https://www.instagram.com/mathieugaillardpro/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://www.youtube.com/@mathieugaillardpro" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75,15.02 15.5,12 9.75,8.98" fill="currentColor" stroke="none"/></svg></a><a href="https://www.linkedin.com/in/mathieugaillardpro/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></div><div class="footer-links"><a href="contact">Contact</a><a href="mentions-legales">Mentions légales</a><a href="/politique-confidentialite">Confidentialité</a></div></div></div></footer>
+  <script src="js/main.js?v=20260930g"></script>
   <script>
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     var hv = document.querySelector('.page-hero-cat video');

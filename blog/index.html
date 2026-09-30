@@ -10,16 +10,23 @@
   <meta property="og:description" content="Le blog de Mathieu Gaillard Pro : prix d'une vidéo immobilière, drone, mariage, corporate, réseaux sociaux et voyage. Conseils concrets de vidéaste.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mathieugaillardpro.fr/blog/">
-  <meta property="og:image" content="https://mathieugaillardpro.fr/img/og-default.jpg">
+  <meta property="og:image" content="https://mathieugaillardpro.fr/img/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mathieu Gaillard, vidéaste et photographe à Montpellier">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mathieugaillardpro.fr/img/og-image.jpg">
   <link rel="canonical" href="https://mathieugaillardpro.fr/blog/">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://i.ytimg.com; media-src 'self'; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; frame-src https://www.youtube-nocookie.com https://www.youtube.com; connect-src 'self' https://formspree.io; form-action https://formspree.io; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+  <link rel="preload" href="/fonts/montserrat-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/montserrat-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../css/style.css?v=20260930g">
 
   <style>
     .page-hero.page-hero-compact { background: transparent; background-image: none; }
@@ -118,7 +125,7 @@
         "@id": "https://mathieugaillardpro.fr/blog/video-immobiliere-montpellier-prix#post",
         "mainEntityOfPage": { "@type": "WebPage", "@id": "https://mathieugaillardpro.fr/blog/video-immobiliere-montpellier-prix" },
         "headline": "Prix d'une vidéo immobilière à Montpellier",
-        "description": "Combien coûte une vidéo pour vendre un bien ? De quoi dépend le tarif, quelles options (drone, HDR, IA) et comment choisir le bon format pour maximiser les visites.",
+        "description": "Combien coûte une vidéo pour vendre un bien ? Pack Clé en main à 390 € avec photos HDR, reel et drone, vidéo premium dès 600 €, options et délais.",
         "datePublished": "2026-03-01",
         "image": "https://mathieugaillardpro.fr/img/dsc02047-hdr.jpg",
         "url": "https://mathieugaillardpro.fr/blog/video-immobiliere-montpellier-prix",
@@ -144,7 +151,7 @@
         "@id": "https://mathieugaillardpro.fr/blog/drone-immobilier-montpellier#post",
         "mainEntityOfPage": { "@type": "WebPage", "@id": "https://mathieugaillardpro.fr/blog/drone-immobilier-montpellier" },
         "headline": "Drone et immobilier : pourquoi c'est indispensable en 2026",
-        "description": "Les vues aériennes transforment la présentation de vos biens. Réglementation 2026, DJI Mini 3 Pro, prix et cas concrets à Montpellier et dans l'Hérault.",
+        "description": "Les vues aériennes transforment la présentation de vos biens : impact sur la vente, réglementation, plans clés et drone inclus dans le pack à 390 €.",
         "datePublished": "2026-04-01",
         "image": "https://mathieugaillardpro.fr/img/drone-sete.jpg",
         "url": "https://mathieugaillardpro.fr/blog/drone-immobilier-montpellier",
@@ -222,104 +229,112 @@
     </div>
     <div class="hero-overlay"></div>
     <div class="container" style="position:relative;z-index:2;">
-      <h1>Le blog créatif</h1>
+      <h1>Le&nbsp;blog créatif</h1>
       <p>Des articles concrets pour comprendre la vidéo et la photo professionnelle. <br /> Tarifs, méthodes, cas réels.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
+      <div class="blog-filter" role="group" aria-label="Filtrer les articles">
+        <button type="button" class="blog-filter-btn is-active" data-filter="all">Tous</button>
+        <button type="button" class="blog-filter-btn" data-filter="immobilier">Immobilier &amp; drone</button>
+        <button type="button" class="blog-filter-btn" data-filter="mariage">Mariage</button>
+        <button type="button" class="blog-filter-btn" data-filter="corporate">Corporate</button>
+        <button type="button" class="blog-filter-btn" data-filter="reseaux">Réseaux sociaux</button>
+        <button type="button" class="blog-filter-btn" data-filter="voyage">Voyage</button>
+      </div>
       <div class="blog-cards">
-        <a class="blog-card" href="video-immobiliere-montpellier-prix" data-reveal>
+        <a class="blog-card" data-cat="immobilier" href="video-immobiliere-montpellier-prix" data-reveal>
           <div class="blog-card-img">
             <img src="../img/dsc02047-hdr.jpg" alt="Intérieur villa filmé en vidéo immobilière à Montpellier" loading="lazy">
           </div>
           <div class="blog-card-body">
             <div class="blog-card-tag">Immobilier</div>
-            <h2 class="blog-card-title">Prix d'une vidéo immobilière à Montpellier</h2>
-            <p class="blog-card-excerpt">Combien coûte une vidéo pour vendre un bien ? De quoi dépend le tarif, quelles options (drone, HDR, IA) et comment choisir le bon format pour maximiser les visites.</p>
+            <h2 class="blog-card-title">Prix d'une vidéo immobilière à&nbsp;Montpellier</h2>
+            <p class="blog-card-excerpt">Combien coûte une vidéo pour vendre un bien ? Pack Clé en main à 390 € avec photos HDR, reel et drone, vidéo premium dès 600 €, options et délais.</p>
             <div class="blog-card-meta">
-              <span>5 min de lecture · Mars 2026</span>
+              <span>3&nbsp;min de lecture · Mars 2026</span>
               <span class="blog-card-readmore">Lire l'article
               </span>
             </div>
           </div>
         </a>
 
-        <a class="blog-card" href="videaste-mariage-occitanie" data-reveal>
+        <a class="blog-card" data-cat="mariage" href="videaste-mariage-occitanie" data-reveal>
           <div class="blog-card-img">
             <img src="../img/photo-1596287452759-7c86e9afc617.jpg" alt="Vidéaste de mariage filmant une cérémonie en Occitanie" loading="lazy">
           </div>
           <div class="blog-card-body">
             <div class="blog-card-tag">Mariage</div>
-            <h2 class="blog-card-title">Vidéaste de mariage en Occitanie : comment choisir ?</h2>
+            <h2 class="blog-card-title">Vidéaste de&nbsp;mariage en&nbsp;Occitanie&nbsp;: comment choisir&nbsp;?</h2>
             <p class="blog-card-excerpt">Style documentaire ou cinématique, matériel, prix, feeling humain : les critères essentiels pour trouver le vidéaste qui correspond à votre histoire.</p>
             <div class="blog-card-meta">
-              <span>6 min de lecture · Mars 2026</span>
+              <span>3&nbsp;min de lecture · Mars 2026</span>
               <span class="blog-card-readmore">Lire l'article
               </span>
             </div>
           </div>
         </a>
 
-        <a class="blog-card" href="drone-immobilier-montpellier" data-reveal>
+        <a class="blog-card" data-cat="immobilier" href="drone-immobilier-montpellier" data-reveal>
           <div class="blog-card-img">
             <img src="../img/drone-sete.jpg" alt="Vue aérienne drone d'un bien immobilier à Sète" loading="lazy">
           </div>
           <div class="blog-card-body">
             <div class="blog-card-tag">Drone</div>
-            <h2 class="blog-card-title">Drone et immobilier : pourquoi c'est indispensable en 2026</h2>
-            <p class="blog-card-excerpt">Les vues aériennes transforment la présentation de vos biens. Réglementation 2026, DJI Mini 3 Pro, prix et cas concrets à Montpellier et dans l'Hérault.</p>
+            <h2 class="blog-card-title">Drone et&nbsp;immobilier&nbsp;: pourquoi c'est indispensable en&nbsp;2026</h2>
+            <p class="blog-card-excerpt">Les vues aériennes transforment la présentation de vos biens : impact sur la vente, réglementation, plans clés et drone inclus dans le pack à 390 €.</p>
             <div class="blog-card-meta">
-              <span>4 min de lecture · Avril 2026</span>
+              <span>3&nbsp;min de lecture · Avril 2026</span>
               <span class="blog-card-readmore">Lire l'article
               </span>
             </div>
           </div>
         </a>
 
-        <a class="blog-card" href="blog-corporate-montpellier" data-reveal>
+        <a class="blog-card" data-cat="corporate" href="blog-corporate-montpellier" data-reveal>
           <div class="blog-card-img">
             <img src="../img/alpine-f1.jpeg" alt="Vidéo d'entreprise professionnelle Montpellier" loading="lazy">
           </div>
           <div class="blog-card-body">
             <div class="blog-card-tag">Corporate</div>
-            <h2 class="blog-card-title">Vidéo d'entreprise à Montpellier : pourquoi c'est devenu indispensable</h2>
+            <h2 class="blog-card-title">Vidéo d'entreprise à&nbsp;Montpellier&nbsp;: pourquoi c'est devenu indispensable</h2>
             <p class="blog-card-excerpt">Artisans, dirigeants, mandataires immobiliers : découvrez pourquoi une vidéo professionnelle à Montpellier transforme votre prospection et votre marque employeur.</p>
             <div class="blog-card-meta">
-              <span>5 min de lecture · Mai 2026</span>
+              <span>3&nbsp;min de lecture · Mai 2026</span>
               <span class="blog-card-readmore">Lire l'article
               </span>
             </div>
           </div>
         </a>
 
-        <a class="blog-card" href="blog-reseaux-sociaux-montpellier" data-reveal>
+        <a class="blog-card" data-cat="reseaux" href="blog-reseaux-sociaux-montpellier" data-reveal>
           <div class="blog-card-img">
             <img src="../img/nts.jpeg" alt="Création Reels TikTok professionnel Montpellier" loading="lazy">
           </div>
           <div class="blog-card-body">
             <div class="blog-card-tag">Réseaux Sociaux</div>
-            <h2 class="blog-card-title">Reels et TikTok à Montpellier : comment capter l'attention en 3 secondes</h2>
+            <h2 class="blog-card-title">Reels et&nbsp;TikTok à&nbsp;Montpellier&nbsp;: comment capter l'attention en&nbsp;3&nbsp;secondes</h2>
             <p class="blog-card-excerpt">Vidéo verticale 9:16, Reels, TikTok : comment créer du contenu social media percutant à Montpellier avec un vidéaste professionnel.</p>
             <div class="blog-card-meta">
-              <span>4 min de lecture · Mai 2026</span>
+              <span>3&nbsp;min de lecture · Mai 2026</span>
               <span class="blog-card-readmore">Lire l'article
               </span>
             </div>
           </div>
         </a>
 
-        <a class="blog-card" href="blog-videaste-voyage" data-reveal>
+        <a class="blog-card" data-cat="voyage" href="blog-videaste-voyage" data-reveal>
           <div class="blog-card-img">
             <img src="../img/madere-vedette.jpg" alt="Vidéaste de voyage professionnel Madère" loading="lazy">
           </div>
           <div class="blog-card-body">
             <div class="blog-card-tag">Voyage</div>
-            <h2 class="blog-card-title">Vidéaste de voyage : capturer l'âme d'un lieu en photo et vidéo</h2>
+            <h2 class="blog-card-title">Vidéaste de&nbsp;voyage&nbsp;: capturer l'âme d'un lieu en&nbsp;photo et&nbsp;vidéo</h2>
             <p class="blog-card-excerpt">Madère, Lac des Pises, Bali : comment je raconte un voyage en photo et en vidéo, du tournage au montage, et trois façons de travailler ensemble.</p>
             <div class="blog-card-meta">
-              <span>5 min de lecture · Mai 2026</span>
+              <span>3&nbsp;min de lecture · Mai 2026</span>
               <span class="blog-card-readmore">Lire l'article
               </span>
             </div>
@@ -329,7 +344,18 @@
     </div>
   </section>
 
-  <footer class="footer"><div class="container"><div class="footer-inner"><p class="footer-copy">© 2026 Mathieu Gaillard Pro · Vidéaste &amp; Photographe à Montpellier</p><div class="footer-social"><a href="https://www.instagram.com/mathieugaillardpro/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://www.youtube.com/@mathieugaillardpro" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75,15.02 15.5,12 9.75,8.98" fill="currentColor" stroke="none"/></svg></a><a href="https://www.linkedin.com/in/mathieugaillardpro/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></div><div class="footer-links"><a href="/contact">Contact</a><a href="/mentions-legales">Mentions légales</a></div></div></div></footer>
-  <script src="../js/main.js"></script>
+  <footer class="footer"><div class="container"><div class="footer-inner"><p class="footer-copy">© 2026 Mathieu Gaillard Pro · Vidéaste &amp; Photographe à Montpellier</p><div class="footer-social"><a href="https://www.instagram.com/mathieugaillardpro/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://www.youtube.com/@mathieugaillardpro" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75,15.02 15.5,12 9.75,8.98" fill="currentColor" stroke="none"/></svg></a><a href="https://www.linkedin.com/in/mathieugaillardpro/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></div><div class="footer-links"><a href="/contact">Contact</a><a href="/mentions-legales">Mentions légales</a><a href="/politique-confidentialite">Confidentialité</a></div></div></div></footer>
+  <script src="../js/main.js?v=20260930g"></script>
+  <script>
+  document.querySelectorAll('.blog-filter-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var f = btn.getAttribute('data-filter');
+      document.querySelectorAll('.blog-filter-btn').forEach(function (b) { b.classList.toggle('is-active', b === btn); });
+      document.querySelectorAll('.blog-card').forEach(function (c) {
+        c.style.display = (f === 'all' || c.getAttribute('data-cat') === f) ? '' : 'none';
+      });
+    });
+  });
+  </script>
 </body>
 </html>

@@ -9,3 +9,14 @@ token.json
 # Documents perso : jamais publiés
 img/*.pdf
 *.pdf
+
+# Originaux avant optimisation (ne pas publier)
+_originaux_img/
+_enc/
+_tmp/
+
+# Vidéos sources 4K (trop lourdes pour GitHub) : seules les versions web sont publiées
+video/*.mp4
+!video/*-1080.mp4
+!video/*-720.mp4
+Claude outputs/

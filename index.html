@@ -14,16 +14,24 @@
   <meta property="og:description" content="Vidéaste et photographe professionnel basé à Montpellier. Vidéo immobilière, film corporate, événementiel, mariage et shooting. +60 avis Google 5 étoiles.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mathieugaillardpro.fr/">
-  <meta property="og:image" content="https://mathieugaillardpro.fr/img/og-default.jpg">
+  <meta property="og:image" content="https://mathieugaillardpro.fr/img/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mathieu Gaillard, vidéaste et photographe à Montpellier">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mathieugaillardpro.fr/img/og-image.jpg">
   <link rel="canonical" href="https://mathieugaillardpro.fr/">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://i.ytimg.com; media-src 'self'; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; frame-src https://www.youtube-nocookie.com https://www.youtube.com; connect-src 'self' https://formspree.io; form-action https://formspree.io; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+  <link rel="preload" as="image" href="img/posters/hero-poster.jpg" fetchpriority="high">
+  <link rel="preload" href="/fonts/montserrat-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/montserrat-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css?v=20260930g">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -42,7 +50,7 @@
   "url": "https://mathieugaillardpro.fr",
   "email": "mathieugaillardpro@gmail.com",
   "telephone": "+33686346079",
-  "image": "https://mathieugaillardpro.fr/img/og-default.jpg",
+  "image": "https://mathieugaillardpro.fr/img/og-image.jpg",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "7 place de la Comédie",
@@ -125,19 +133,20 @@
     <div class="hero-bg"></div>
     <!-- Showreel en arrière-plan -->
     <div class="hero-video">
-<video autoplay muted loop playsinline preload="auto" poster="img/hero-poster.jpg">
-        <source src="video/video-website.mp4" type="video/mp4"> <!-- // MODIF -->
+<video autoplay muted loop playsinline preload="metadata" poster="img/posters/hero-poster.jpg">
+        <source src="video/video-website-1080.mp4" type="video/mp4" media="(min-width: 900px)">
+        <source src="video/video-website-720.mp4" type="video/mp4">
       </video>
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1>MATHIEU GAILLARD</h1>
+      <h1>MATHIEU GAILLARD<span class="sr-only">, vidéaste et photographe à Montpellier</span></h1>
       <p class="hero-sub">Vidéaste & Photographe basé à Montpellier</p>
       <div class="hero-btns">
         <a href="contact" class="btn btn-primary">Discutons de votre projet</a>
         <a href="#portfolio" class="btn btn-outline">Voir mes réalisations</a>
       </div>
-      <a class="hero-social-proof" href="https://share.google/nxrvuj1jSstlkLhKO" target="_blank" rel="noopener" aria-label="Voir les avis Google">
+      <a class="hero-social-proof" href="https://share.google/nxrvuj1jSstlkLhKO" target="_blank" rel="noopener">
         <span class="hero-stars">★★★★★</span>
         <span class="hero-reviews">+60 avis Google 5 étoiles</span>
       </a>
@@ -148,49 +157,58 @@
   <div class="brands-strip">
     <div class="marquee-strip">
       <div class="marquee-track">
-        <span class="marquee-logo-item" data-logo="zoomx"><img src="img/zoomx.png" alt="ZoomX Production" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="hexis"><img src="img/hexis.png" alt="HEXIS" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="gaillard"><img src="img/gaillard-immo.png" alt="Gaillard Immobilier" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="hivernatrail"><img src="img/hivernatrail.png" alt="Hivernatrail" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="alpine"><img src="img/alpine-f1.png" alt="Alpine F1 Team" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="wildrunn"><img src="img/wildrunn.png" alt="Wildrunn" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="egea"><img src="img/egea-voyages.png" alt="Égéa Voyages" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="american-socks"><img src="img/american-socks.png" alt="American Socks" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="biopulz"><img src="img/biopulz.png" alt="Biopulz" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="muflon"><img src="img/muflon-logo.png" alt="Muflon" loading="lazy"></span>
-
-        <span class="marquee-logo-item" data-logo="zoomx"><img src="img/zoomx.png" alt="ZoomX Production" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="hexis"><img src="img/hexis.png" alt="HEXIS" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="gaillard"><img src="img/gaillard-immo.png" alt="Gaillard Immobilier" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="hivernatrail"><img src="img/hivernatrail.png" alt="Hivernatrail" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="alpine"><img src="img/alpine-f1.png" alt="Alpine F1 Team" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="wildrunn"><img src="img/wildrunn.png" alt="Wildrunn" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="egea"><img src="img/egea-voyages.png" alt="Égéa Voyages" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="american-socks"><img src="img/american-socks.png" alt="American Socks" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="biopulz"><img src="img/biopulz.png" alt="Biopulz" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="muflon"><img src="img/muflon-logo.png" alt="Muflon" loading="lazy"></span>
-
-        <span class="marquee-logo-item" data-logo="zoomx"><img src="img/zoomx.png" alt="ZoomX Production" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="hexis"><img src="img/hexis.png" alt="HEXIS" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="gaillard"><img src="img/gaillard-immo.png" alt="Gaillard Immobilier" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="hivernatrail"><img src="img/hivernatrail.png" alt="Hivernatrail" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="alpine"><img src="img/alpine-f1.png" alt="Alpine F1 Team" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="wildrunn"><img src="img/wildrunn.png" alt="Wildrunn" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="egea"><img src="img/egea-voyages.png" alt="Égéa Voyages" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="american-socks"><img src="img/american-socks.png" alt="American Socks" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="biopulz"><img src="img/biopulz.png" alt="Biopulz" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="muflon"><img src="img/muflon-logo.png" alt="Muflon" loading="lazy"></span>
-
-        <span class="marquee-logo-item" data-logo="zoomx"><img src="img/zoomx.png" alt="ZoomX Production" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="hexis"><img src="img/hexis.png" alt="HEXIS" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="gaillard"><img src="img/gaillard-immo.png" alt="Gaillard Immobilier" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="hivernatrail"><img src="img/hivernatrail.png" alt="Hivernatrail" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="alpine"><img src="img/alpine-f1.png" alt="Alpine F1 Team" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="wildrunn"><img src="img/wildrunn.png" alt="Wildrunn" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="egea"><img src="img/egea-voyages.png" alt="Égéa Voyages" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="american-socks"><img src="img/american-socks.png" alt="American Socks" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="biopulz"><img src="img/biopulz.png" alt="Biopulz" loading="lazy"></span>
-        <span class="marquee-logo-item" data-logo="muflon"><img src="img/muflon-logo.png" alt="Muflon" loading="lazy"></span>
+        <span class="marquee-logo-item" data-logo="alpine"><img class="logo-w" src="img/logos/alpine-white.png" alt="Alpine F1 Team" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/alpine-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="hexis"><img class="logo-w" src="img/logos/hexis-white.png" alt="HEXIS" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/hexis-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="fise"><img class="logo-w" src="img/logos/fise-white.png" alt="FISE Montpellier" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/fise-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="soprema"><img class="logo-w" src="img/logos/soprema-white.png" alt="Soprema" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/soprema-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="running-conseil"><img class="logo-w" src="img/logos/running-conseil-white.png" alt="Running Conseil" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/running-conseil-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="zoomx"><img class="logo-w" src="img/logos/zoomx-white.png" alt="ZoomX Production" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/zoomx-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="gaillard"><img class="logo-w" src="img/logos/gaillard-white.png" alt="Gaillard Immobilier" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/gaillard-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="hivernatrail"><img class="logo-w" src="img/logos/hivernatrail-white.png" alt="Hivernatrail" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/hivernatrail-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="wildrunn"><img class="logo-w" src="img/logos/wildrunn-white.png" alt="Wildrunn" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/wildrunn-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="egea"><img class="logo-w" src="img/logos/egea-white.png" alt="Égéa Voyages" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/egea-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="american-socks"><img class="logo-w" src="img/logos/american-socks-white.png" alt="American Socks" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/american-socks-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="biopulz"><img class="logo-w" src="img/logos/biopulz-white.png" alt="Biopulz" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/biopulz-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="muflon"><img class="logo-w" src="img/logos/muflon-white.png" alt="Muflon" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/muflon-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="alpine"><img class="logo-w" src="img/logos/alpine-white.png" alt="Alpine F1 Team" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/alpine-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="hexis"><img class="logo-w" src="img/logos/hexis-white.png" alt="HEXIS" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/hexis-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="fise"><img class="logo-w" src="img/logos/fise-white.png" alt="FISE Montpellier" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/fise-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="soprema"><img class="logo-w" src="img/logos/soprema-white.png" alt="Soprema" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/soprema-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="running-conseil"><img class="logo-w" src="img/logos/running-conseil-white.png" alt="Running Conseil" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/running-conseil-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="zoomx"><img class="logo-w" src="img/logos/zoomx-white.png" alt="ZoomX Production" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/zoomx-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="gaillard"><img class="logo-w" src="img/logos/gaillard-white.png" alt="Gaillard Immobilier" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/gaillard-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="hivernatrail"><img class="logo-w" src="img/logos/hivernatrail-white.png" alt="Hivernatrail" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/hivernatrail-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="wildrunn"><img class="logo-w" src="img/logos/wildrunn-white.png" alt="Wildrunn" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/wildrunn-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="egea"><img class="logo-w" src="img/logos/egea-white.png" alt="Égéa Voyages" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/egea-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="american-socks"><img class="logo-w" src="img/logos/american-socks-white.png" alt="American Socks" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/american-socks-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="biopulz"><img class="logo-w" src="img/logos/biopulz-white.png" alt="Biopulz" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/biopulz-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="muflon"><img class="logo-w" src="img/logos/muflon-white.png" alt="Muflon" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/muflon-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="alpine"><img class="logo-w" src="img/logos/alpine-white.png" alt="Alpine F1 Team" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/alpine-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="hexis"><img class="logo-w" src="img/logos/hexis-white.png" alt="HEXIS" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/hexis-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="fise"><img class="logo-w" src="img/logos/fise-white.png" alt="FISE Montpellier" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/fise-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="soprema"><img class="logo-w" src="img/logos/soprema-white.png" alt="Soprema" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/soprema-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="running-conseil"><img class="logo-w" src="img/logos/running-conseil-white.png" alt="Running Conseil" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/running-conseil-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="zoomx"><img class="logo-w" src="img/logos/zoomx-white.png" alt="ZoomX Production" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/zoomx-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="gaillard"><img class="logo-w" src="img/logos/gaillard-white.png" alt="Gaillard Immobilier" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/gaillard-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="hivernatrail"><img class="logo-w" src="img/logos/hivernatrail-white.png" alt="Hivernatrail" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/hivernatrail-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="wildrunn"><img class="logo-w" src="img/logos/wildrunn-white.png" alt="Wildrunn" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/wildrunn-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="egea"><img class="logo-w" src="img/logos/egea-white.png" alt="Égéa Voyages" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/egea-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="american-socks"><img class="logo-w" src="img/logos/american-socks-white.png" alt="American Socks" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/american-socks-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="biopulz"><img class="logo-w" src="img/logos/biopulz-white.png" alt="Biopulz" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/biopulz-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="muflon"><img class="logo-w" src="img/logos/muflon-white.png" alt="Muflon" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/muflon-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="alpine"><img class="logo-w" src="img/logos/alpine-white.png" alt="Alpine F1 Team" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/alpine-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="hexis"><img class="logo-w" src="img/logos/hexis-white.png" alt="HEXIS" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/hexis-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="fise"><img class="logo-w" src="img/logos/fise-white.png" alt="FISE Montpellier" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/fise-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="soprema"><img class="logo-w" src="img/logos/soprema-white.png" alt="Soprema" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/soprema-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="running-conseil"><img class="logo-w" src="img/logos/running-conseil-white.png" alt="Running Conseil" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/running-conseil-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="zoomx"><img class="logo-w" src="img/logos/zoomx-white.png" alt="ZoomX Production" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/zoomx-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="gaillard"><img class="logo-w" src="img/logos/gaillard-white.png" alt="Gaillard Immobilier" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/gaillard-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="hivernatrail"><img class="logo-w" src="img/logos/hivernatrail-white.png" alt="Hivernatrail" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/hivernatrail-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="wildrunn"><img class="logo-w" src="img/logos/wildrunn-white.png" alt="Wildrunn" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/wildrunn-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="egea"><img class="logo-w" src="img/logos/egea-white.png" alt="Égéa Voyages" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/egea-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="american-socks"><img class="logo-w" src="img/logos/american-socks-white.png" alt="American Socks" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/american-socks-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="biopulz"><img class="logo-w" src="img/logos/biopulz-white.png" alt="Biopulz" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/biopulz-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
+        <span class="marquee-logo-item" data-logo="muflon"><img class="logo-w" src="img/logos/muflon-white.png" alt="Muflon" loading="lazy" decoding="async"><img class="logo-c" src="img/logos/muflon-color.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></span>
       </div>
     </div>
   </div>
@@ -200,7 +218,7 @@
     <div class="container">
       <div class="section-line"></div>
       <p class="section-label">Projets vedettes</p>
-      <h2 class="section-title">Les projets vedettes</h2>
+      <h2 class="section-title">Les&nbsp;projets vedettes</h2>
       <p class="section-desc">Chaque projet est unique.<br /> Je m'adapte à votre univers pour créer des contenus visuels qui vous ressemblent.</p>
       <div class="portfolio-grid"> <!-- // MODIF -->
         <a href="corporate#hexis-alpine" class="portfolio-item">
@@ -213,7 +231,7 @@
           </div>
         </a>
                 <a href="evenementiel#fise-2026" class="portfolio-item">
-          <img class="portfolio-thumb" src="img/fise-2026.png" alt="FISE 2026, Événementiel" loading="lazy">
+          <img class="portfolio-thumb" src="img/fise-2026.jpg" alt="FISE 2026, Événementiel" loading="lazy">
           <div class="portfolio-overlay"></div>
           <!-- // MODIF: badges retires -->
           <div class="portfolio-info">
@@ -231,7 +249,7 @@
           </div>
         </a>
         <a href="immobilier#chalet-luxe" class="portfolio-item">
-          <img class="portfolio-thumb" src="img/chalet-de-luxe.png" alt="Chalet de luxe, Vidéo immobilière drone" loading="lazy">
+          <img class="portfolio-thumb" src="img/chalet-de-luxe.jpg" alt="Chalet de luxe, Vidéo immobilière drone" loading="lazy">
           <div class="portfolio-overlay"></div>
           <!-- // MODIF: badges retires -->
           <div class="portfolio-info">
@@ -266,7 +284,7 @@
     <div class="container">
       <div class="section-line"></div>
       <p class="section-label">Services</p>
-      <h2 class="section-title">Donnez vie à vos ambitions</h2>
+      <h2 class="section-title">Donnez vie à&nbsp;vos&nbsp;ambitions</h2>
       <p class="section-desc">Du script, à la captation jusqu'à la livraison, je vous accompagne de A à Z avec un rendu cinématographique soigné.</p>
       <div class="services-grid">
         <a href="immobilier" class="service-card service-card--immo">
@@ -374,7 +392,7 @@
               </div>
             </div>
 
-            <h3 class="about-block-title">Compétences &amp; Outils</h3>
+            <h3 class="about-block-title">Compétences &amp;&nbsp;Outils</h3>
             <div class="about-pills">
               <span class="about-pill">RÉALISATION</span>
               <span class="about-pill">CADRAGE</span>
@@ -419,7 +437,7 @@
     <div class="container">
       <div class="section-line"></div>
       <p class="section-label">Témoignages</p>
-      <h2 class="section-title">Ce que disent mes clients</h2>
+      <h2 class="section-title">Ce que disent mes&nbsp;clients</h2>
 
       <div class="reviews-top-row" style="display:flex;
   justify-content:space-between;
@@ -517,9 +535,9 @@
         <div class="reviews-group">
           <div class="review-card"><div class="review-card-top"><span class="review-card-author">Apollo</span><div class="review-card-stars">★★★★★</div></div><p class="review-card-text">« Super boulot 🔥 »</p><div class="review-card-meta"><span>Avis Google</span></div></div>
           <div class="review-card"><div class="review-card-top"><span class="review-card-author">Tanguy Lemaitre</span><div class="review-card-stars">★★★★★</div></div><p class="review-card-text">« Super vidéaste, très professionnel, efficace, sérieux, et rendu final incroyable ! Je recommande +++ ! »</p><div class="review-card-meta"><span>Avis Google</span></div></div>
-          <div class="review-card"><div class="review-card-top"><span class="review-card-author">Anaïs Jost</span><div class="review-card-stars">★★★★★</div></div><p class="review-card-text">« J'ai passé un excellent moment lors de mon shooting photo ! Le photographe a su me mettre à l'aise dès le début, avec beaucoup de professionnalisme. »</p><div class="review-card-meta"><span>Avis Google</span></div></div>
         </div>
         <div class="reviews-group">
+          <div class="review-card"><div class="review-card-top"><span class="review-card-author">Anaïs Jost</span><div class="review-card-stars">★★★★★</div></div><p class="review-card-text">« J'ai passé un excellent moment lors de mon shooting photo ! Le photographe a su me mettre à l'aise dès le début, avec beaucoup de professionnalisme. »</p><div class="review-card-meta"><span>Avis Google</span></div></div>
           <div class="review-card"><div class="review-card-top"><span class="review-card-author">Léo-Paul Berodier</span><div class="review-card-stars">★★★★★</div></div><p class="review-card-text">« Très professionnel, des montages de qualité et un vrai esprit artistique. Je recommande ! »</p><div class="review-card-meta"><span>Avis Google</span></div></div>
         </div>
       </div>
@@ -536,11 +554,11 @@
     <div class="container">
       <div class="section-line"></div>
       <p class="section-label">Le blog du créatif</p>
-      <h2 class="section-title">Le blog du créatif</h2>
+      <h2 class="section-title">Le&nbsp;blog du&nbsp;créatif</h2>
       <div class="features">
         <a href="blog/video-immobiliere-montpellier-prix" 
            class="feature" style="text-decoration:none;color:inherit;">
-          <p class="feature-title">Prix d'une vidéo immobilière à Montpellier</p>
+          <p class="feature-title">Prix d'une vidéo immobilière à&nbsp;Montpellier</p>
           <p class="feature-desc">Tarifs, options drone/HDR/IA et conseils 
           pour choisir le bon format.</p>
           <span style="font-size:0.7rem;color:var(--accent);
@@ -549,7 +567,7 @@
         </a>
         <a href="blog/videaste-mariage-occitanie" 
            class="feature" style="text-decoration:none;color:inherit;">
-          <p class="feature-title">Vidéaste mariage Occitanie : comment choisir ?</p>
+          <p class="feature-title">Vidéaste mariage Occitanie&nbsp;: comment choisir&nbsp;?</p>
           <p class="feature-desc">Style, budget, matériel et feeling : 
           les critères pour ne pas se tromper.</p>
           <span style="font-size:0.7rem;color:var(--accent);
@@ -558,7 +576,7 @@
         </a>
         <a href="blog/drone-immobilier-montpellier" 
            class="feature" style="text-decoration:none;color:inherit;">
-          <p class="feature-title">Drone et immobilier : indispensable en 2026</p>
+          <p class="feature-title">Drone et&nbsp;immobilier&nbsp;: indispensable en&nbsp;2026</p>
           <p class="feature-desc">Vues aériennes, réglementation DJI 
           et prix à Montpellier.</p>
           <span style="font-size:0.7rem;color:var(--accent);
@@ -575,13 +593,13 @@
   </section>
 
   <section class="section" id="contact-inline">
-    <video autoplay loop muted playsinline class="video-background" preload="auto" aria-hidden="true">
-      <source src="video/devis-bg.mp4" type="video/mp4">
+    <video autoplay loop muted playsinline class="video-background" preload="none" data-lazy-src="video/devis-bg-720.mp4" aria-hidden="true">
       Votre navigateur ne supporte pas les vidéos HTML5.
     </video>
     <div class="container">
-      <h2 class="section-title" style="margin-bottom:20px;">Demande de devis</h2>
+      <h2 class="section-title" style="margin-bottom:20px;">Demande de&nbsp;devis</h2>
       <form id="contact-form" action="https://formspree.io/f/mdayqrwl" method="POST">
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp-field">
         <input type="hidden" name="_subject" value="Devis Accueil (site)">
         <input type="hidden" name="page_source" value="index">
         <div class="contact-grid">
@@ -610,6 +628,8 @@
           </div>
         </div>
       </form>
+   <p><br></p> 
+<p class="form-legal" style="text-align: center;">Vos informations servent uniquement à répondre à votre demande et ne sont jamais revendues. <a href="/politique-confidentialite">Politique de confidentialité</a>.</p>
       <div id="form-success" style="display:none;text-align:center;padding:40px;">
         <p style="font-size:1.1rem;font-weight:600;margin-bottom:8px;">Message envoyé !</p>
         <p style="color:var(--text3);margin-bottom:24px;">Je vous réponds sous 24h.</p>
@@ -635,13 +655,13 @@
         </div>
         <div class="footer-links">
           <a href="contact">Contact</a>
-          <a href="mentions-legales">Mentions légales</a>
+          <a href="mentions-legales">Mentions légales</a><a href="/politique-confidentialite">Confidentialité</a>
         </div>
       </div>
     </div>
   </footer>
 
-<script src="js/main.js?v=2"></script>
+<script src="js/main.js?v=20260930g"></script>
 </body>
 </html>
 
